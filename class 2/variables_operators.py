@@ -1,22 +1,27 @@
 # variables
-greeting = 'hello world'
-print(greeting)
-first_name = 'brenetta reed'
-print(first_name)
+# greeting = 'hello world'
+# print(greeting)
+# first_name = 'brenetta reed'
+# print(first_name)
 # Addition
-
-
+# print(4 + 2)
+# print(5 + 5)
+# print(100 + 5)
 # Subtraction
-
+# print(10 - 5)
 
 # Multiplication
-
+# print(3 * 3)
+# print(9*4)
 
 # Division
+# print(5/2)
+# print(10/5)
 
 
 # Exponents
-
+print(5**5)
+print(3**6)
 
 # Integer Division
 
@@ -74,6 +79,10 @@ print(first_name)
 
 
 # Eval
+
+
+
+
 
 
 '''
