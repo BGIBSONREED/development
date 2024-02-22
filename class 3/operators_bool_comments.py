@@ -159,9 +159,9 @@ celsius = fahrenheight
 
 
 # Is 5 greater than or equal to 6? >=
-#print(5>=6)
-result = (5 >= 6)
-print(result)
+# #print(5>=6)
+# result = (5 >= 6)
+# print(result)
 
 
 
@@ -172,10 +172,14 @@ print(result)
 
 
 # and
+print(5 == 5 and 4 == 4) #this is true because both are true this is a inline comment after the #
+print(2 == 2 and 3 == 2) #this is false because one is false
 
 
 # Values from example 1 can be stored in variables
-
+logic_1 = (5 == 5)
+logic_2 = (4 == 4)
+print(logic_1 and logic_2)
 
 # or
 
