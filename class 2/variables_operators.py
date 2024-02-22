@@ -20,23 +20,26 @@
 
 
 # Exponents
-print(5**5)
-print(3**6)
+# print(5**5)
+# print(3**6)
 
 # Integer Division
-
+# print(10//3)
+# print(5//3)
 
 # Modulo/Mod/Remainder
-
+# print(5%2)
+# print(6%2)
 
 # Program to find the perimeter of a rectangle
 
 
 # Data Types
 
-
 # Integer
-
+num_one = 5
+print(num_one)
+print(type(num_one))
 
 # String
 
