@@ -32,5 +32,5 @@ base = 6
 # print('Is side 1 greater than side 2', side_1 > side_2) #Side 1 is not greater than side 2
 
 
-print('Is the base equal to side 1', base == side_1)
+print('Is the base equal to side 1', base == side_1) #The base is not equal to side 1
 
