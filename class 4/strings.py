@@ -17,3 +17,11 @@
 
 
 # reference vs value equality == vs is 
+x = 'hello'
+str2 = 'HELLO'.lower()
+# print(x)
+# print(str2)
+# print(x == str2) #lowercase = lowercase is true
+# print(x is str2)
+# print(id(x))
+# print(id(str2))
