@@ -91,15 +91,56 @@
 # word_8 = 'Supercalifragilisticexpialidocious'
 # print(word_8.find('g'))
 
-test_1 = "abcdef"
-test_2 = '%$123'
+# test_1 = "abcdef"
+# test_2 = '%$123'
 
-print(test_1.isalnum())
-print(test_2.isalnum())
+# print(test_1.isalnum())
+# print(test_2.isalnum())
 
-ex_8 = '123*' # am I alphanumeric (false due to the asterik)
+# ex_8 = '123*' # am I alphanumeric (false due to the asterik)
 
 
-test_3 = 'abcde'
-test_4 = '012345'
-print(test_3.isalpha)
+# test_3 = 'abcde'
+# test_4 = '012345'
+# print(test_3.isalpha)
+
+# test_5 = '1234P'
+# test_6 = '234567'
+# print(test_5.isalpha())
+# print(test_6.isalnum())
+
+# #isdigit() are all characters digits
+# ex_10 ='123Hello' #check for digits
+
+# # islower() lets check for lowercase
+
+# test_9 = 'Zebra'
+# test_10 = 'affordable'
+# print(test_9.islower())
+# print(test_10.islower())
+
+
+# ex_12 = 'Username' # check if all lowercase
+
+# isupper() lets check for ALL uppercase
+
+# test_13 = 'j     b   c'
+# print(test_13.isspace())
+
+#check for title casing
+# test_15 = 'Eye of the tiger'
+# test_16 = 'Eye Of The Tiger'
+# print(test_15.istitle())
+# print(test_16.istitle())
+
+#join() Joins the elements of an iterable to the end of the string
+
+my_colors = ['blue', 'green', 'red', 'orange', 'blue']
+new_string = '-'.join(my_colors) #you can change the ' - ' with different characters to separate the colors
+print(new_string)
+
+
+# lower() converts a string into lower case
+
+
+
