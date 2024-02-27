@@ -17,11 +17,23 @@
 
 
 # reference vs value equality == vs is 
-x = 'hello'
-str2 = 'HELLO'.lower()
+# x = 'hello'
+# str2 = 'HELLO'.lower()
 # print(x)
 # print(str2)
 # print(x == str2) #lowercase = lowercase is true
 # print(x is str2)
 # print(id(x))
 # print(id(str2))
+
+# test_character = 'b'
+# test_string = 'bananas' #is b in bananas
+# print(test_character in test_string)
+
+# alphabet = 'abcdefgh'
+# length_of_alphabet = len(alphabet)
+# print(length_of_alphabet)
+
+animal = 'elephant'
+length_of_animal = len(animal)
+print(length_of_animal)
