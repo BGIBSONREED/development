@@ -63,8 +63,43 @@
 # print(word_4.center(50))
 
 
-ex_4 = 'Hello World!'
-print(word_4.center(65))
+# ex_4 = 'Hello World!'
+# print(word_4.center(65))
+
+# word_5 = 'Pseudopseudohypoparathyroidism' # how many p's?
+# print(word_5.count('p'))
+
+# ex_5 = 'Antidisestablishmentarianism' # how many times does the leter 'e' occur?
+# print(ex_5.count('e'))
+
+# word_6 = 'I\tam\ta\ttab' # extendtabs ' \ ' is a escape character
+# print(word_6)
+# print(word_6.expandtabs(10))
+
+# create_new_line = 'I\n am\n a\ n newline'
+# print(create_new_line)
+
+# ex_6 = "Let's\t do\t som
+
+# find hte position of the letter k
+# word_7 = 'Omphaloskepsis'
+# print(word_7.find('k'))
+
+# ex_7 = 'Dichlorodifluoromethane' # find the position of the letter f
+# print(ex_7.find('f'))
+
+# word_8 = 'Supercalifragilisticexpialidocious'
+# print(word_8.find('g'))
+
+test_1 = "abcdef"
+test_2 = '%$123'
+
+print(test_1.isalnum())
+print(test_2.isalnum())
+
+ex_8 = '123*' # am I alphanumeric (false due to the asterik)
 
 
-
+test_3 = 'abcde'
+test_4 = '012345'
+print(test_3.isalpha)
