@@ -135,12 +135,28 @@
 
 #join() Joins the elements of an iterable to the end of the string
 
-my_colors = ['blue', 'green', 'red', 'orange', 'blue']
-new_string = '-'.join(my_colors) #you can change the ' - ' with different characters to separate the colors
-print(new_string)
+# my_colors = ['blue', 'green', 'red', 'orange', 'blue']
+# new_string = '-'.join(my_colors) #you can change the ' - ' with different characters to separate the colors
+# print(new_string)
 
 
-# lower() converts a string into lower case
+# # lower() converts a string into lower case
+
+# # strip() returns a trimmed version of the string
+
+# username = '    jessica123   '
+# username_cleaned = username.strip()
+# print(len(username))
+# print(len(username_cleaned))
 
 
+# user_input = int(input("What is your name? "))
+# print(user_input)
+# print(int(user_input)) #casting the string to an integer
+# print(type(user_input))
+
+
+#get input from user
+user_input = input("What is your SSN? ")
+print(user_input)
 
