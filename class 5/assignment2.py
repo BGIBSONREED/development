@@ -13,23 +13,18 @@ Test your code on a few inputs to make sure it works!
 '''
 
 # Get input 
-# email = input('Hello, please enter your email address: ')
-# print(email)
+email = input('Hello, please enter your email address: ')
 
 # Clean data
-# email = email.strip()
-# print(email)
+email = email.strip()
 
 # # Test 1: It has a "." at the third-to-last index
-# email = 'bgibsonreed@gmail.com'
-# test_1 = (email[-4] == '.')
-# print(test_1)
-# print('Test 1: Does the email have a "." at the third-to-last index?')
+test_1 = (email[-4] == '.')
+print('Test 1: Does the email have a "." at the third-to-last index?', test_1) 
 
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier, email cannot be @.com
-email = 'bgibsonreed@gmail.com'
 test_2 = ('@' in email[-6:0:-1])
-print(test_2)
+print('Test 2: Is there a @ symbol in your email? ', test_2)
 
 
 # ''' in - Returns True if a string appears inside another string (as a substring), and False otherwise.'''
