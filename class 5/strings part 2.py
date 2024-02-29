@@ -47,7 +47,36 @@
 
 #using bracket notation and reverse indexing, access the letter g, the letter i, letter p
 
-fav_season = 'spring'
-print(fav_season[-1])
-print(fav_season[-3])
-print(fav_season[-5])
+# fav_season = 'spring'
+# print(fav_season[-1])
+# print(fav_season[-3])
+# print(fav_season[-5])
+
+# SLICING
+
+# there are 3 parameters available with indexing with bracket notation [start:stop:step]
+fav_food = 'spaghetti'
+# slice_of_fav_food = fav_food[2:7] # exclude the character at stop
+# print(slice_of_fav_food)
+
+# # using slcing please create a string that accesses 'rica' in 'America'
+
+# country = 'America'
+# slice_of_country = country[3:7]
+# print(slice_of_country)
+
+# cartoon = 'Dora the explorer'
+# slice_of_cartoon = cartoon[1:4]
+# print(slice_of_cartoon)
+
+boxer = 'rocky balboa'
+print(boxer[7:11])
+
+# let's step through this string 2 characters at a time
+superheroine = 'wonder woman'
+# print(superheroine[2:len(superheroine):2])
+
+#lets step through this entire word and skip by 4
+word = "supercalifragilisticexpialidocious"
+print(word[0:len(word):4])
+
