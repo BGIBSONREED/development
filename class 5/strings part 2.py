@@ -70,7 +70,7 @@ fav_food = 'spaghetti'
 # print(slice_of_cartoon)
 
 boxer = 'rocky balboa'
-print(boxer[7:11])
+# print(boxer[7:11])
 
 # let's step through this string 2 characters at a time
 superheroine = 'wonder woman'
@@ -78,5 +78,23 @@ superheroine = 'wonder woman'
 
 #lets step through this entire word and skip by 4
 word = "supercalifragilisticexpialidocious"
-print(word[0:len(word):4])
+# print(word[0:len(word):4])
 
+"""SLICING IN REVERSE"""
+
+# kids = 'daycare' #excludes the start character
+# # print(kids[::-1]) # full daycare in reverse
+# print(kids[5:0:-1])
+# print(kids[6:0:-1])
+
+#write some code to print the second half of a string
+# example: python
+
+# half_string = 'python'
+# print(half_string[3:8])
+
+#create a variable to get half of the length of the word
+
+language = python
+
+half = (len(language)/2)
