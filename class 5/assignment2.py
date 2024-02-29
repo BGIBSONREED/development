@@ -13,23 +13,39 @@ Test your code on a few inputs to make sure it works!
 '''
 
 # Get input 
+# email = input('Hello, please enter your email address: ')
+# print(email)
 
 # Clean data
+# email = email.strip()
+# print(email)
 
-# Test 1: It has a "." at the third-to-last index
+# # Test 1: It has a "." at the third-to-last index
+# email = 'bgibsonreed@gmail.com'
+# test_1 = (email[-4] == '.')
+# print(test_1)
+# print('Test 1: Does the email have a "." at the third-to-last index?')
 
-# Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
+# Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier, email cannot be @.com
+email = 'bgibsonreed@gmail.com'
+test_2 = ('@' in email[-6:0:-1])
+print(test_2)
+
+
+# ''' in - Returns True if a string appears inside another string (as a substring), and False otherwise.'''
+# test_character = 'c'
+# test_string = 'bananas'
+# print(test_character in test_string)
+
+
+# kids = 'daycare' #excludes the start character
+# print(kids[::-1]) # full daycare in reverse
+# print(kids[5:0:-1])
+# print(kids[6:0:-1])
+
 
 # Test 3: There is at least one character before the "@" symbol
 
-# Test 4: It doesn’t have any spaces (doesn’t contain " ")
+# Test 4: It doesn’t have any spaces (doesn’t contain " ") (neta note full string no spaces)
 
 #Final Test with and Keyword
-My work
-
-Attach
-Upload from this device
-No file chosen
-New
-Points
-No points

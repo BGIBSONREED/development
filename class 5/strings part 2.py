@@ -95,6 +95,6 @@ word = "supercalifragilisticexpialidocious"
 
 #create a variable to get half of the length of the word
 
-language = python
+# language = python
 
-half = (len(language)/2)
+# half = (len(language)/2)
