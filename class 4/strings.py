@@ -160,11 +160,11 @@
 # user_input = input("What is your SSN? ")
 # print(user_input)
 
-#get input from user
-# user_word_input = input('Please enter your word: ')
-# user_number_input = input('Please enter your number ')
-print(user_word_input)
-print(user_number_input)
+# #get input from user
+# # user_word_input = input('Please enter your word: ')
+# # user_number_input = input('Please enter your number ')
+# print(user_word_input)
+# print(user_number_input)
 
-length_of_word = len(user_word_input) #length of our word input
+# length_of_word = len(user_word_input) #length of our word input
 

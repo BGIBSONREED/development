@@ -40,7 +40,14 @@
 # last_position = month[len(month)-1]
 # print(last_position)
 
-# using bracket notation access the letter x, the letter e, and the letter d
-first_name = "Alexander"
-access_letters = first_name[len(access_letters)-2]
-print(access_letters)
+# # using bracket notation access the letter x, the letter e, and the letter d
+# first_name = "Alexander"
+# access_letters = first_name[len(access_letters)-2]
+# print(access_letters)
+
+#using bracket notation and reverse indexing, access the letter g, the letter i, letter p
+
+fav_season = 'spring'
+print(fav_season[-1])
+print(fav_season[-3])
+print(fav_season[-5])
