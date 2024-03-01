@@ -26,21 +26,14 @@ print('Test 1: Does the email have a "." at the third-to-last index?', test_1)
 test_2 = ('@' in email[-6:0:-1])
 print('Test 2: Is there a @ symbol in your email? ', test_2)
 
-
-# ''' in - Returns True if a string appears inside another string (as a substring), and False otherwise.'''
-# test_character = 'c'
-# test_string = 'bananas'
-# print(test_character in test_string)
-
-
-# kids = 'daycare' #excludes the start character
-# print(kids[::-1]) # full daycare in reverse
-# print(kids[5:0:-1])
-# print(kids[6:0:-1])
-
-
 # Test 3: There is at least one character before the "@" symbol
+test_3 = ('d' in email)
+print('Test 3: Do you have a least one character before the "@" symbol', test_3)
 
 # Test 4: It doesn’t have any spaces (doesn’t contain " ") (neta note full string no spaces)
+test_4 = (' ' in email)
+print('Test 4: Does your email have any spaces?', test_4)
+
 
 #Final Test with and Keyword
+
