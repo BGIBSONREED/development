@@ -31,9 +31,8 @@ test_3 = ('d' in email)
 print('Test 3: Do you have a least one character before the "@" symbol', test_3)
 
 # Test 4: It doesn’t have any spaces (doesn’t contain " ") (neta note full string no spaces)
-test_4 = (' ' in email)
-print('Test 4: Does your email have any spaces?', test_4)
-
+test_4 = ('' in email)
+print('Test 4: There are no spaces in your email?', test_4)
 
 #Final Test with and Keyword
-
+print('Final Test: Was your answer to Test 1 and 2 True?', test_1 and test_2)
