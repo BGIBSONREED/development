@@ -32,14 +32,14 @@ This is odd
 # We can use modulus to figure out odd or even
 # val = 8
 # result = val % 2
-# print(result)
+# # print(result)
 
 
-'''Exercise Solution'''
-user_input = int(input("please enter your number:"))
+# '''Exercise Solution'''
+# user_input = int(input("please enter your number:"))
 
-if user_input % 2 != 0:
-    print("this is odd")
+# if user_input % 2 != 0:
+#     print("this is odd")
 
 
 ''' Else If (Elif) Statements '''
@@ -53,9 +53,41 @@ D - Between 65 and 69
 F - Anything under 65
 '''
 
+# get grade from user
+score = int(input("Please enter your grade: "))
 
 
+# create our conditional - OPTION 1
+# if score >= 90 and score <= 100:
+#     print("grade A")
+# elif score>= 80 and score < 90:
+#     print("grade b")
+# elif score>= 70 and score < 79:
+#     print("grade c")
+# elif score>= 65 and score < 69:
+#     print("grade d")
 
+
+# OPTION 2
+# if 90 <= score <= 100:
+#     print("grade A")
+# elif <= 80 score < 90:
+#     print("grade b")
+# elif <= 70 score < 79:
+#     print("grade c")
+# elif <= 65 score < 69:
+#     print("grade d")
+
+
+# OPTION 3
+if score >= 90:
+    print("grade A")
+elif score >= 80:
+    print("grade b")
+elif score >= 70:
+    print("grade c")
+elif score >= 65:
+    print("grade d")
 
 '''
 Exercise
