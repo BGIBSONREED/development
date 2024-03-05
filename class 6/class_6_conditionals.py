@@ -54,7 +54,7 @@ F - Anything under 65
 '''
 
 # get grade from user
-score = int(input("Please enter your grade: "))
+# score = int(input("Please enter your grade: "))
 
 
 # create our conditional - OPTION 1
@@ -79,15 +79,15 @@ score = int(input("Please enter your grade: "))
 #     print("grade d")
 
 
-# OPTION 3
-if score >= 90:
-    print("grade A")
-elif score >= 80:
-    print("grade b")
-elif score >= 70:
-    print("grade c")
-elif score >= 65:
-    print("grade d")
+# # OPTION 3
+# if score >= 90:
+#     print("grade A")
+# elif score >= 80:
+#     print("grade b")
+# elif score >= 70:
+#     print("grade c")
+# elif score >= 65:
+#     print("grade d")
 
 '''
 Exercise
@@ -105,7 +105,17 @@ This is even
 
 ''' Exercise solution with an elif and else'''
 
+# user_input = int(input("Please enter your number: "))
+# if user_input % 2!= 0:
+#     print("This is Odd")
+# # elif user_input % 2== 0:
+# #     print("This is even")
+# # or you can you use else if there is one option if its either...my note
+# else:
+#     print("this is even")
 
+
+ 
 
 
 
@@ -126,11 +136,33 @@ User input: 9.2
 Unknown
 
 
+
 '''
 
 ''' Exercise solution(s)'''
 
+#check to see if there is a decimal
 
+# user_input = (input("Please enter your number: "))
+
+# if user_input % 2!= 0:
+#     print("This is Odd")
+# elif int(user_input) % 2== 0:
+#     print("This is even")
+# if not user_input.isdecimal():
+#     print("unknown")
+
+
+try:
+
+  user_input = int(input("Please enter your number: "))
+except:
+  print('unknown')
+else:
+    if user_input % 2 != 0:
+        print("this is odd")
+    else:
+        print("this is even")
 
 
 
