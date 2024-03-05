@@ -189,14 +189,14 @@ method - else
 
 '''
 
-user_input = input("Please enter your data: ")
+# user_input = input("Please enter your data: ")
 
-if user_input.isdigit():
-    print(f'{user_input} is a number')
-elif user_input.isalpha(): 
-    print(f'{user_input} is a word')
-else:
-    print(f'{user_input} is somethine else')
+# if user_input.isdigit():
+#     print(f'{user_input} is a number')
+# elif user_input.isalpha(): 
+#     print(f'{user_input} is a word')
+# else:
+#     print(f'{user_input} is somethine else')
 
 
 
@@ -261,14 +261,37 @@ If they match, print “Login successful.” If they don't, print “Incorrect u
 
 
 # Prompt the user to enter their username and password using the input() function.
-
+user_input = input("Please enter your username: ")
+user_output = input("Please enter your password: ")
+  
 
 # Create two variables called username and password and set them to any valid string values.
 
+username = 'breed'
+password = 'week4'
 
-# Create your conditional
 
 
+# Create your conditional, includes your comparison
+
+username = (user_input == username)
+password = (user_output == password)
+# print(username)
+# print(password)
+
+if user_input = breed:
+# if username = (user_input == username)
+    print('Login successful')
+elif:
+    print('Incorrect username or password')
+
+
+
+# if score >= 90:
+#     print("grade A")
+# elif score >= 80:
+#     print("grade b")
+# elif score >= 70:
 
 
 
