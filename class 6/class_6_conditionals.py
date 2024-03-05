@@ -143,9 +143,9 @@ Unknown
 
 #check to see if there is a decimal
 
-# user_input = (input("Please enter your number: "))
+# user_input = input("Please enter your number: "))
 
-# if user_input % 2!= 0:
+# else:
 #     print("This is Odd")
 # elif int(user_input) % 2== 0:
 #     print("This is even")
@@ -153,16 +153,16 @@ Unknown
 #     print("unknown")
 
 
-try:
+# try:
 
-  user_input = int(input("Please enter your number: "))
-except:
-  print('unknown')
-else:
-    if user_input % 2 != 0:
-        print("this is odd")
-    else:
-        print("this is even")
+#   user_input = int(input("Please enter your number: "))
+# except:
+#   print('unknown')
+# else:
+#     if user_input % 2 != 0:
+#         print("this is odd")
+#     else:
+#         print("this is even")
 
 
 
@@ -177,14 +177,27 @@ Write some code that takes in a string from the user and prints whether the stri
 Examples:
 User input: 7
 This is a number
+string method - isdigit
 
 User input: abcde
 This is a word
+string method -isalpha
 
 User input: 7!ab5
 This is something else
+method - else
 
 '''
+
+user_input = input("Please enter your data: ")
+
+if user_input.isdigit():
+    print(f'{user_input} is a number')
+elif user_input.isalpha(): 
+    print(f'{user_input} is a word')
+else:
+    print(f'{user_input} is somethine else')
+
 
 
 
