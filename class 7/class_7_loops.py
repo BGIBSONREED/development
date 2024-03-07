@@ -112,63 +112,84 @@ If they match, print “Login successful” and end the program.
 
 '''
 
-# Set sys id and pass
-sys_id = 'admin'
-sys_password = 'password'
+# # Set sys id and pass
+# sys_id = 'admin'
+# sys_password = 'password'
 
-# Prompt User
-user_id = input("Please enter your username: ")
-user_password = input("Please enter your password: ")
+# # Prompt User
+# user_id = input("Please enter your username: ")
+# user_password = input("Please enter your password: ")
 
-# Our initial check, while not equal we will enter loop
-while sys_id != user_id and sys_password != user_password:
-        #we have entered the loop, that emans the uswername/pasword did not match
-    print("incorrect username or password")
-    user_id = input("Please enter your username: ")
-    user_password = ("Please enter your password: ")
+# # Our initial check, while not equal we will enter loop
+# while sys_id != user_id and sys_password != user_password:
+#         #we have entered the loop, that emans the uswername/pasword did not match
+#     print("incorrect username or password")
+#     user_id = input("Please enter your username: ")
+#     user_password = ("Please enter your password: ")
 
-print("Login Successful") # Outside of the while loop
+# print("Login Successful") # Outside of the while loop
     
 
 
 
 ''' For Loops '''
 
-# STRING
-my_string = 'Supercalifragilisticexpialidocious'
+# # STRING
+# my_string = 'Supercalifragilisticexpialidocious'
+
+# for s in my_string:
+#     print(s)
 
 
-# LIST
-my_list = ['dog', 'cat', 'bird', 'giraffe', 'fox', 'elephant', 'mouse', 'zebra']
+# # LIST
+# my_list = ['dog', 'cat', 'bird', 'giraffe', 'fox', 'elephant', 'mouse', 'zebra']
+
+# for l in my_list:
+#     print(l)
+
+# # TUPLE
+# my_tuple = ('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
+
+# for months in my_tuple:
+#     print(months)
 
 
-# TUPLE
-my_tuple = ('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
+# # DICTIONARY
+# my_dictionary = {"First name": "Jill",
+#                  "Last name": "Simmons",
+#                  "Age": 34,
+#                  "Address":"1515 Mockingbird Lane"}
+
+# for keys in my_dictionary.keys():
+#     print(keys)
+
+# for values in my_dictionary.values():
+#     print(values)
+
+# # SET
+# my_set = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
+
+# for days in my_set.set():
+#     print(days)
 
 
+# # RANGE
 
-# DICTIONARY
-my_dictionary = {"First name": "Jill",
-                 "Last name": "Simmons",
-                 "Age": 34,
-                 "Address":"1515 Mockingbird Lane"}
-
-
-
-
-# SET
-my_set = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
-
-
-
-# RANGE
-
-
+# for x in range(10,25):
+#     print(x)
 
 '''
 Write a for loop that loops through a string, counts all the letters, and then print how long the string is.
 '''
+my_string = 'tomorrow'
+count = 0
+for s in my_string:
 
+    print(s)
+    count += 1 #incrementing count for every letter in string
+
+print(f"There are {count} letters in the word {my_string}")
+    
 
 
 ''' Exercise
