@@ -276,22 +276,18 @@ password = 'week4'
 
 username = (user_input == username)
 password = (user_output == password)
-# print(username)
-# print(password)
+print(username)
+print(password)
 
-if user_input = breed:
-# if username = (user_input == username)
-    print('Login successful')
-elif:
+
+if user_input >= breed
+     print("Login successful")
+elif: user_input == breed
     print('Incorrect username or password')
 
 
 
-# if score >= 90:
-#     print("grade A")
-# elif score >= 80:
-#     print("grade b")
-# elif score >= 70:
+
 
 
 
