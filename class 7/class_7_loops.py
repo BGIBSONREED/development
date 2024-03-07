@@ -181,14 +181,14 @@ If they match, print “Login successful” and end the program.
 '''
 Write a for loop that loops through a string, counts all the letters, and then print how long the string is.
 '''
-my_string = 'tomorrow'
-count = 0
-for s in my_string:
+# my_string = 'tomorrow'
+# count = 0
+# for s in my_string:
 
-    print(s)
-    count += 1 #incrementing count for every letter in string
+#     print(s)
+#     count += 1 #incrementing count for every letter in string
 
-print(f"There are {count} letters in the word {my_string}")
+# print(f"There are {count} letters in the word {my_string}")
     
 
 
@@ -204,7 +204,16 @@ Example:
 Hint: remember to cast to int() for each digit in the loop
 '''
 
+# sum= 0 #initialize our variable
 
+# user_input = input("Please enter a number")
+
+# for t in user_input:
+#    if user_input.isdecimal(): # once we confirm it is a number
+#       t = int(t) # this has to be cast to an interger to be added to sum
+#       sum += t # every time through, we will add that value to sum
+
+# print(f'Your total is {sum}')
 
 
 ''' Exercise 
