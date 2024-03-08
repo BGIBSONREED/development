@@ -30,7 +30,7 @@ print(username)
 print(password)
 
 
-if 
+if username and password:
      print("Login successful")
 else: 
      print('Incorrect username or password')
