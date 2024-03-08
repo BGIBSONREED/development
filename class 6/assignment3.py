@@ -22,7 +22,6 @@ username = 'breed'
 password = 'week4'
 
 
-
 # Create your conditional, includes your comparison
 
 username = (user_input == username)
@@ -31,8 +30,7 @@ print(username)
 print(password)
 
 
-
-# if 
-#      print("Login successful")
-# elif: user_input == breed
-#     print('Incorrect username or password')
+if 
+     print("Login successful")
+else: 
+     print('Incorrect username or password')
