@@ -121,7 +121,7 @@ colors = ['green', 'blue', 'orange', 'yellow'] #you can solve taking username pr
 # # '''test for letter''
 
 
-# # # convert to intger, end and print sum if zero, otherwise ocntinue to add to sum
+# # # convert to integer, end and print sum if zero, otherwise ocntinue to add to sum
 #     userinput = int(userinput) #recast to integer
 #     if userinput != 0:
 #         sum += userinput
@@ -168,13 +168,42 @@ colors = ['green', 'blue', 'orange', 'yellow'] #you can solve taking username pr
 # # Make sure to use the continue keyword.
 # '''
 
+#variables
+# user_input, sum = '', 0
 
+# while True:
+#     user_input = input("Please enter your string: ")
+#     for u in user_input: #loop through the strin entered by the user
+#         if u.isalpha():
+#             # print(u)
+#             continue # continue will allow us to skip the letters
+#         else:
+#             u = int(u) # recasting to a number
+#             if (u % 2) == 0:
+#                 sum += u
+            
+#     print(sum)
 
 
 # ''' Break, Continue, and Pass '''
+# word = 'hello'
+# vowels = 'aeiou'
 
+# # for l in word:
+# #     if l in vowels:
+# #         print(l)
+# #         break
 
-
+# # for l in word:
+# #     if l in vowels:
+# #         continue
+# #     print(l)
+    
+# for l in word:
+#     if l in vowels:
+#         pass
+#     print(l)
+    
 
 # '''
 # Exercise
@@ -196,8 +225,17 @@ colors = ['green', 'blue', 'orange', 'yellow'] #you can solve taking username pr
 
 
 # '''
-
+#focus on making the link and the problem to make it a code
 
 # '''These variables will be placeholders for the total and new string we will be creating'''
+new_total = 0
+new_string = ''
 
+while True:
+    user_input = input("Please enter your data: ")
+
+    # if empty stop the loop
+    if len(user_input) == 0:
+        print("String is empty, stopping the loop")
+        break
 
