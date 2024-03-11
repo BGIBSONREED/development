@@ -33,7 +33,7 @@ colors = ['green', 'blue', 'orange', 'yellow'] #you can solve taking username pr
 
 # userin ='' #initialization of variable
 # while userin != 'stop':
-#     userin = input("Enter something orhit stop to leave the loop" )
+#     userin = input("Enter something orbit stop to leave the loop" )
 #     print(userin)
  
 # while True:
@@ -47,84 +47,157 @@ colors = ['green', 'blue', 'orange', 'yellow'] #you can solve taking username pr
 
 ''' Break in nested loops '''
 
+# i = 6
+# while i> 0:
+#     print(i)
+#     i -= 1
+#     if i == 4:
+#         break
+
+# else:
+#     print('done')
 
 
-'''
-Exercise
+# userin = ''
+# #taking a string from the user until they hit stop
 
-Write some code that takes in numbers from a user one at a time. This should keep going until the user enters 0. Then print the sum of all the numbers.
-If the user inputs something that isn't a number, an error message should appear and the program should stop. (Hint: use break)
+# while userin != 'stop': #(is not equal to )
+#     userin = input("Please enter a word orbit stop to end the loop")
 
-Example (no error):
-5
-12
-0
-Sum: 17
+#     for l in userin: #looping through the input from the user
+#         if l.isalpha(): # we are testing to  see if each chareacter is in the aplha bet
+#             print(l)
+#         else:
+#             break
+#     print("this is our next of line")
+        
 
-Example (error):
-5
-7
-c
-Error: Not a number
+# while True:
+#     userinput = input("Please enter your word")
+#     print("we are online 77")
+#     print(userinput)
+#     print("we are still in the while loop")
+#     break
+#     print("I will not print, because we used the break keyword above me")
 
-'''
-'''Declare any needed variables'''
+# # print("Why am I printed??") #this is outside of the loop
 
 
 
+# '''
+# Exercise
 
-''' Continue keyword '''
+# Write some code that takes in numbers from a user one at a time. This should keep going until the user enters 0. Then print the sum of all the numbers.
+# If the user inputs something that isn't a number, an error message should appear and the program should stop. (Hint: use break)
+
+# Example (no error):
+# 5
+# 12
+# 0
+# Sum: 17
+
+# Example (error):
+# 5
+# 7
+# c
+# Error: Not a number
+
+# '''
+# '''Declare any needed variables'''
+# userinput, sum = '', 0
+
+# '''Start our loop'''
+# while True:
+#     userinput = input("Please enter a number: ")
+    
+#     if userinput.isalpha():
+#         print("Error: Not a number")
+#         break
+
+# # '''Start our LookupError'''
+
+# # '''Get our input'''
+
+# # '''test for letter''
+
+
+# # # convert to intger, end and print sum if zero, otherwise ocntinue to add to sum
+#     userinput = int(userinput) #recast to integer
+#     if userinput != 0:
+#         sum += userinput
+#     else: 
+#         print(f'sum: {sum}')
+#         break
+
+
+
+# ''' Continue keyword '''
 
 ''' Example
-Use the continue keyword to loop through a string and only print the vowels.
-'''
-# Option 1
+# Use the continue keyword to loop through a string and only print the vowels.
+# '''
+# # Option 1 # this method can be used to look for taken usernames
+
+# test_string = 'hello'
+# # vowels = 'aeiou'
+# vowels = ['a', 'e', 'i', 'o', 'u']
+
+# for t in test_string:
+#     if t in vowels:
+#         print(t)
+#     else:
+#         continue
+
+# # # Option 2 
+# test_string = 'hello'
+
+# for t in test_string:
+#     if t in 'hello':
+#         print(t)
+#     else:
+#         continue
 
 
-# Option 2
+# ''' 
+# Exercise:
+# # Sum of Even Digits
 
-
-
-''' 
-Exercise:
-Sum of Even Digits
-
-Take a string as user input, and verify that it's a number.
-Loop through each digit of the number, and only add it to the sum if it's even.
-Print the sum of all the even digits at the end. 
-Make sure to use the continue keyword.
-'''
+# # Take a string as user input, and verify that it's a number.
+# # Loop through each digit of the number, and only add it to the sum if it's even.
+# # Print the sum of all the even digits at the end. 
+# # Make sure to use the continue keyword.
+# '''
 
 
 
 
-''' Break, Continue, and Pass '''
+# ''' Break, Continue, and Pass '''
 
 
 
 
-'''
-Exercise
+# '''
+# Exercise
 
-Write some code that takes in strings from a user one at a time.
-After each string is taken in evaluate if the string is empty, a number, a set of letters, or contains symbols.
-If the string is empty, stop the loop.
-If the string is a number, convert it to a float and add it to a total.
-If the string is a set of letters, concatenate to the other letter strings passed in.
-If it contains a symbol, or is none of the above, do nothing and repeat the loop.
-Make sure to use break and/or continue.
-
-
-REQUIREMENTS
-    If the string is empty, stop the loop.
-    If the string is a number, convert it to a float and add it to a total.
-    If the string is a set of letters, concatenate to the other letter strings passed in.
-    If it contains a symbol, or is none of the above, do nothing and repeat the loop.
+# Write some code that takes in strings from a user one at a time.
+# After each string is taken in evaluate if the string is empty, a number, a set of letters, or contains symbols.
+# If the string is empty, stop the loop.
+# If the string is a number, convert it to a float and add it to a total.
+# If the string is a set of letters, concatenate to the other letter strings passed in.
+# If it contains a symbol, or is none of the above, do nothing and repeat the loop.
+# Make sure to use break and/or continue.
 
 
-'''
+# REQUIREMENTS
+#     If the string is empty, stop the loop.
+#     If the string is a number, convert it to a float and add it to a total.
+#     If the string is a set of letters, concatenate to the other letter strings passed in.
+#     If it contains a symbol, or is none of the above, do nothing and repeat the loop.
 
 
-'''These variables will be placeholders for the total and new string we will be creating'''
+# '''
+
+
+# '''These variables will be placeholders for the total and new string we will be creating'''
 
 
