@@ -7,7 +7,10 @@ How do I write a While Loop?
 
 '''
 # For Loop
-colors = ['green', 'blue', 'orange', 'yellow']
+colors = ['green', 'blue', 'orange', 'yellow'] #you can solve taking username problem. you habe to look at the string the user is giving to you and you have loop through it
+
+# for c in colors:
+    # print(c)
 
 
 
@@ -19,7 +22,25 @@ colors = ['green', 'blue', 'orange', 'yellow']
 ''' Break Keyword '''
 
 # Lets look at the 2 examples below and take note where the loop stops
+# south = 10
+# north = 5
+# west = 6
+# east = 11
+# print(south)
 
+# or south, north, west, east = 10, 5, 6, 11 (initialization variables on one line)
+#print (south, north west, east)
+
+# userin ='' #initialization of variable
+# while userin != 'stop':
+#     userin = input("Enter something orhit stop to leave the loop" )
+#     print(userin)
+ 
+# while True:
+#     userin = input("Enter something orhit stop to leave the loop" )
+#     if userin == 'stop':
+#         break
+#      print(userin)       
 
 
 
