@@ -102,43 +102,60 @@ sort() Sorts the list
 
 food = ['ice cream', 'pizza', 'apple', 'burger', 'cookies']
 
-# lets add salad with append
-
+# # lets add salad with append
+# food.append('salad')
+# print(food)
 
 
 # lets remove all items with clear
-
-
-
+# food.clear()
+# print(food)
+    
 # let create a copy
+# new_food_list = food.copy()
+# food.append('aspargus')
+# print('This is our copy', new_food_list)
+# print('This is our original list', food)
 
+# How many times does pizza appear? count method
+# pizza_count = food.count('pizza')
+# print(pizza_count)
 
-# How many times does pizza appear?
+# Lets add items of a list to our food list, extend method
+# vegetables = ['carrots', 'asparagus', 'broccoli']
+# food.extend(vegetables)
+# print(food)
 
-
-# Lets add items of a list to our food list
-vegetables = ['carrots', 'asparagus', 'broccoli']
 
 
 # lets find the index value for apple
 
+# print('The index of the apple is', food.index('apple'))
+
 # Lets add cereal to the 3rd spot in our list
+# food.insert(3, 'cereal')
+# print(food)
 
-
-# Lets remove a food by index position
-#
+# Lets remove a food by index position, pop method
+# food.pop(1)
+# print(food)
 
 # Lets remove an item with a specified value
-
+# food.remove('burger')
+# print(food) # will only remove the first instance
 
 # Lets reverse our list
-
+# food.reverse()
+# print(food)
 
 
 # Lets sort our list
-
+# food.sort()
+# print(food)
 
 # Sort versus sorted()
+# new_sorted_list = sorted(food)
+
 
 # Sorted returns a newer sorted list
 
@@ -153,16 +170,36 @@ You want to make a list containing the types of pets that the user has. Keep pro
 '''
 
 
+# user_input = ''
+# pet_name = [] #this will capture animal names
+
+# while user_input != 'stop':
+#     user_input = input("please enter your pets name: ")
+#     if user_input == "stop": # this is to not add stop to the list
+#         break
+#     elif user_input not in pet_name:
+#         pet_name.append(user_input)
+#     else:
+#         print(f'{user_input} is already in the list')
+
+# print(pet_name)
+
 
 ''' Removing duplicates from a list, but leaving 1'''
 
 colors = ['blue', 'blue', 'blue', 'green', 'red', 'blue', 'blue']
 
-# Option 1 
 
+# Option 1 
+# new_colors = [] # capture unique colors
+# for c in colors: #looping through orginial list
+#     if c not in new_colors:
+#         new_colors.append(c)
+#     print(new_colors)
 
 # Option 2 - Using Sets
-
+# colors = list(set(colors))
+# print(colors)
 
 
 
