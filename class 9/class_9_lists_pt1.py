@@ -1,28 +1,28 @@
 ''' Lists '''
 
 
-# Indexing
-planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter']
-first_planet = planets[0] 
+# # Indexing
+# planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter']
+# first_planet = planets[0] 
 # print(first_planet)
 
-# Update with indexing
-colors = ['red', 'green', 'yellow', 'blue', 'orange']
-print('first list',colors)
-colors[0] = 'black'
-colors[1] = 'orange'
-# print('after update',colors)
+# # Update with indexing
+# colors = ['red', 'green', 'yellow', 'blue', 'orange']
+# print('first list',colors)
+# colors[0] = 'black'
+# colors[1] = 'orange'
+# # print('after update',colors)
 
-# Iterate with for loop
-animals = ['dog', 'cat', 'lion', 'tiger', 'eagle']
-# for a in animals:
-    # print(a)
+# # Iterate with for loop
+# animals = ['dog', 'cat', 'lion', 'tiger', 'eagle']
+# # for a in animals:
+#     # print(a)
 
 
-# Len function gives us the amount of items in a list
-modes_of_travel = ['car', 'plane', 'truck', 'train', 'boat']
-how_many_vehicles = len(modes_of_travel)
-# print(how_many_vehicles)
+# # Len function gives us the amount of items in a list
+# modes_of_travel = ['car', 'plane', 'truck', 'train', 'boat']
+# how_many_vehicles = len(modes_of_travel)
+# # print(how_many_vehicles)
 # print(len(modes_of_travel))
 
 '''
@@ -39,7 +39,7 @@ planets = ["mercury", "venus", "earth", "mars"]
 
 counter = 0
 
-for a in planets: # for everything thats in planets its a
+# for a in planets: # for everything thats in planets its a
     # print(f'{counter}: {a}')
     # print(f'{counter}: {a}', end=' ')
     # counter += 1 # += is a shortcut operator
@@ -54,16 +54,35 @@ Make sure you filter out any repeats.
 data = ['car', 3, True, False, 4.09, 'Tuesday']
 
 '''
-# Our collections
+
+# fname = "Annie"
+# is_warm_out = True
+# temp = 98
+
+# print(type(fname))
+# print(type(is_warm_out))
+# print(type(temp))
+
+'''the append method will allow you to add values to a list'''
+
+# # Our collections
+# data = ['car', 3, True, False, 4.09, 'Tuesday']
+# types_list = [] # this list will hold our types
+
+# # for d in data:
+# #     types_list.append(type(d)) #grabbing the types from data, appending to empty list
+# #     print(types_list)
+#     # print(d)
+#     # print(type(d))
+
+# # Looping through for types
 
 
-# Looping through for types
 
+# # Optional, remove repeats using sets
 
-
-# Optional, remove repeats using sets
-
-
+# types_list = list(set(types_list))
+# print('Duplicastes removed with sets', types_list)
 ''' List Methods '''
 
 '''
