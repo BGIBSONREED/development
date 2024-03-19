@@ -231,30 +231,30 @@ colors = ['green', 'blue', 'orange', 'yellow'] #you can solve taking username pr
 new_total = 0
 new_string = ''
 
-while True:
-    user_input = input("Please enter your data: ")
+# while True:
+#     user_input = input("Please enter your data: ")
 
-    # if empty stop the loop
-    if len(user_input) == 0:
-        print("String is empty, stopping the loop")
-        break
-    # if number convert to float and add to total
-    elif user_input.isnumeric():
-        user_input = float(user_input) #casting to a float
-        # print(user_input)
-        # print(type(user_input))
-        # break
-    new_total += user_input
-    print(f'Updated total to {new_total}')
-    continue
-    # if letter concatenate to new string
+#     # if empty stop the loop
+#     if len(user_input) == 0:
+#         print("String is empty, stopping the loop")
+#         break
+#     # if number convert to float and add to total
+#     elif user_input.isnumeric():
+#         user_input = float(user_input) #casting to a float
+#         # print(user_input)
+#         # print(type(user_input))
+#         # break
+#     new_total += user_input
+#     print(f'Updated total to {new_total}')
+#     continue
+#     # if letter concatenate to new string
 
-    elif user_input.isalpha():
-    new_string += user_input
-    print(f'Your updated string is {new_string}')
+#     elif user_input.isalpha():
+#     new_string += user_input
+#     print(f'Your updated string is {new_string}')
 
-    # Check for special characters
-    elif not user_input.isalnum():
-        print(f'{user_input}' is a special character, no action and lets continue))
+#     # Check for special characters
+#     elif not user_input.isalnum():
+#         print(f'{user_input}' is a special character, no action and lets continue))
     
 
