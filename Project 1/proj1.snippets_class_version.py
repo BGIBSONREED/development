@@ -47,8 +47,8 @@ error_messages = ['Error message 1', 'Error Message 2', 'This is my new message'
 
 
 ''' Taken usernames '''
-sample_word = 'black'
-sample_list = ['green', 'blue', 'orange', 'yellow', 'purple']
+# sample_word = 'green'
+# sample_list = ['green', 'blue', 'orange', 'yellow', 'purple']
 
 # if sample_word in sample_list:
 #     print("Word exists in the list")
@@ -110,11 +110,6 @@ password = 'fido1950'
 
 # Lets check for a match
 
-while True:
-    if sys_username == username and sys_password == password:
-        print("Login Successful")
-        break
-    else:
-        print("Incorrect username and password")
+
         
 

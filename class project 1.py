@@ -8,25 +8,54 @@ user_output = input("Please enter your password: ")
 
 username = (user_input == username)
 password = (user_output == password)
-print(username)
-print(password)
+# print(username)
+# print(password)
 
-if username and password:
-     print("Login successful")
-else: 
-     print('Incorrect username or password')
-
-# # username = input("Please enter your username: ")
-# # user_password = input("Please enter your password: ")
 
 # ''' Taken usernames '''
-# sample_word = 'black'
-# sample_list = ['green', 'blue', 'orange', 'yellow', 'purple']
+username = 'breed'
+taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 
-# # if sample_word in sample_list:
-# #     print("Word exists in the list")
-# # else:
-# #     print("Word does not exist in list")
+if username in taken_usernames:
+    print("Username taken")
+else:
+    print("Username successful")
+
+
+if username:
+     print('Login successful')
+else: 
+     print('Invalid username')
+
+if password:
+     print('Login successful')
+else: 
+     print('Invalid password') 
+
+     
+if len(user_output) >= 8:
+    print(f'Test Passed: {user_output} is greater than 8 characters')
+else:
+    print(f' Test Failed: {user_output} is less than 8 characters')
+
+one_uppercase = False
+for t in user_output:
+    if t.isupper():
+       one_uppercase = True
+print('Contains at least one uppercase letter? ', one_uppercase)
+
+one_lowercase = False
+for t in user_output:
+    if t.islower():
+       one_lowercase = True
+print('Contains at least one lowercase letter? ', one_lowercase)
+
+if '_' in user_output:
+    print(f"Test Passed: {user_output} contains a \'_' symbol")    
+else:
+    print(f"Test Failed: {user_output} no a \'_' symbol")
+
+
 
 # userin = ''
 
@@ -39,11 +68,10 @@ else:
 # user_password = input("Please enter your password: ")
 # print("Login Successful") 
 
-# test_string = 'c1234567'
-# At least 8 characters long
-# Contains at least one uppercase letter
-# one_uppercase = False
-# for t in test_string:
-#     if t.isupper():
-#         one_uppercase = True
-# print('Contains at least one uppercase letter? ', one_uppercase)
+    
+# while True:
+#     if sys_username == username and sys_password == password:
+#         print("Login Successful")
+#         break
+#     else:
+#         print("Incorrect username and password")

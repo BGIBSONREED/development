@@ -18,12 +18,12 @@ Sd@sdjs df0 - at least 10 characters, contains number, has caps, @ symbol, conta
 Sd@sdjsdf0 - should pass all tests
 '''
 
-while True:
-    user_input = input("Please enter your string ")
-    # print(user_input)
-    break
+# while True:
+#     user_input = input("Please enter your string ")
+#     print(user_input)
+#     break
 
-#     # Not enough characters
+# #     # Not enough characters
 
 # if len(user_input) >= 10:
 #     print(f'Test Passed: {user_input} is greater than 10 characters')
@@ -43,7 +43,7 @@ while True:
 #     continue
 
     # Contains '@' symbol
-    if '@' in user_input:
+if '@' in user_input:
         print(f'Test Passed: {user_input} contains a \'@' symbol')
     else:
         print(f'Test Failed: {user_input} no a \'@' symbol')
