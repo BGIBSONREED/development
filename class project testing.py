@@ -20,9 +20,36 @@ taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 #starting loop
 while True:
     username = input('Please enter your username. ')
-    password = input('Please enter your password. ')
-    print(username, password)
+    # password = input('Please enter your password. ')
+   
+    #test username
+    #test for taken usernames
+   
+    if username in taken_usernames:
+        print(error_messages[0])
+        continue
+    
+    #test for lowercase letter
+    lowercase_letter_test = username[0]
+ 
+    if lowercase_letter_test.isupper():
+        print(error_messages[1])
+        continue
 
+
+    print('We have passed testing')
+    break
+
+
+    #test password
+
+
+
+    #authenticate username and password
+
+
+    #reprompt user to login - this is where I use sys_id/sys_password
+    
 
 
 
