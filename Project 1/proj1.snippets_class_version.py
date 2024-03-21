@@ -60,17 +60,17 @@ error_messages = ['Error message 1', 'Error Message 2', 'This is my new message'
 
 # If input is a number we will go through this while loop and continue through, if not, we will send the user back to the beginning
 
-# while True:
-#     userinput = input("What is your test string? ")
+while True:
+    userinput = input("What is your test string? ")
 
-#     if userinput.isnumeric():
-#         print("This is a number, we will stay in the loop")
-#     else:
-#         print("Not a number, have the user try again")
-#         continue
+    if userinput.isnumeric():
+        print("This is a number, we will stay in the loop")
+    else:
+        print("Not a number, have the user try again")
+        continue
 
-#     print("if you see this line of code, we are still in the loop")
-#     break
+    print("if you see this line of code, we are still in the loop")
+    break
 
 
 ''' Password requirements '''

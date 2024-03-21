@@ -65,7 +65,7 @@ colors = ['green', 'blue', 'orange', 'yellow'] #you can solve taking username pr
 #     userin = input("Please enter a word orbit stop to end the loop")
 
 #     for l in userin: #looping through the input from the user
-#         if l.isalpha(): # we are testing to  see if each chareacter is in the aplha bet
+#         if l.isalpha(): # we are testing to  see if each character is in the aplha bet
 #             print(l)
 #         else:
 #             break
