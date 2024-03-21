@@ -17,6 +17,12 @@ error_messages = ['Username taken', 'Invalid Username', 'Invalid Password']
 taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 
 
+#starting loop
+while True:
+    username = input('Please enter your username. ')
+    password = input('Please enter your password. ')
+    print(username, password)
+
 
 
 
