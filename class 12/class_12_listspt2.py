@@ -129,8 +129,8 @@ lis_2 = []
 
 
 # With numpy
-transposed_list = np.transpose(lis)
-print(transposed_list)
+# transposed_list = np.transpose(lis)
+# print(transposed_list)
 
 
 '''
@@ -151,34 +151,41 @@ data = [[45,56,89],[67,34,78],[23,67,34]]
 data_columns = []
 
 # Transpose data
-for i in range(len(data[0])):
-    temp_list = []
-    for my_columns in data:
-      temp_list.append(my_columns[i])
-    data_columns.append(temp_list)
-print(data_columns)
+# for i in range(len(data[0])):
+#     temp_list = []
+#     for my_columns in data:
+#       temp_list.append(my_columns[i])
+#     data_columns.append(temp_list)
+# print(data_columns)
 
 
-# Format for output
-print(f'''
-Column 1: Sum = {sum(data_columns[0])}, Average = {statistics.mean(data_columns[0])}
-Column 2: Sum = {sum(data_columns[1])}, Average = {statistics.mean(data_columns[1])}
-Column 3: Sum = {sum(data_columns[2])}, Average = {statistics.mean(data_columns[2])}
-''')
+# # Format for output
+# print(f'''
+# Column 1: Sum = {sum(data_columns[0])}, Average = {statistics.mean(data_columns[0])}
+# Column 2: Sum = {sum(data_columns[1])}, Average = {statistics.mean(data_columns[1])}
+# Column 3: Sum = {sum(data_columns[2])}, Average = {statistics.mean(data_columns[2])}
+# ''')
       
 
 
-# List Comprehension
+# # List Comprehension
 
 
-# For Loop
-# Add veggies less than 6 letters to new list
-vegetables = ['broccoli', 'kale', 'onion', 'garlic', 'kale']
+# # For Loop
+# # Add veggies less than 6 letters to new list
+# vegetables = ['broccoli', 'kale', 'onion', 'garlic', 'kale']
+
+# short_vegetables = []
+
+# for v in vegetables:
+#     if len(v) <6: # if vegetables is less than 6 characters
+#         short_vegetables.append(v) #append to short vegetables
+#         print(short_vegetables)
 
 
 # List comprehension
-vegetables = ['broccoli', 'kale', 'onion', 'garlic', 'kale']
-
+# vegetables = ['broccoli', 'kale', 'onion', 'garlic', 'kale']
+# new_list = [v for v in vegetables]
 
 ''' Exercise
 You are given a list of integers. Write a Python program to create a new list that only includes the even numbers from the original list.
@@ -191,8 +198,14 @@ new_list = [34, 92, 2]
 ''' List comprehension for conditions'''
 # With a For Loop
 original_list = [34, 57, 81, 92, 2, 13]
-new_list = []
+# new_list = []
 
+# for o in original_list:
+#     if o % 2 == 0:
+#         new_list.append(o)
+#     print(new_list)
+
+# new_list = [o for o in original_list if o % 2 == 0]  
 
 
 # With list comprehension
@@ -203,18 +216,23 @@ original_list = [34, 57, 81, 92, 2, 13]
 ''' List comprehension with expressions'''
 
 # Lets add 5 to every item in this list
-numbers = [0, 2, 3, 8, 9, 11, 20]
+# numbers = [0, 2, 3, 8, 9, 11, 20]
+# plus_five = [n + 5 for n in numbers]
+# print(plus_five)
 
+# # We can add two lists
+# first_list = [1, 2, 3]
+# second_list = [4, 5, 6]
 
-# We can add two lists
-first_list = [1, 2, 3]
-second_list = [4, 5, 6]
-
+# third_list = [x for x in first_list] + [x for x in second_list]
+# print(third_list)
 
 
 # Multiply items from two lists
-list1 = [1, 2, 3, 4, 5]
-list2 = [10, 20, 30, 40, 50]
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [10, 20, 30, 40, 50]
+
+# product_list = [list1[i] * list2[i] for i in range(len(list1))]
 
 
 
@@ -235,6 +253,12 @@ over_5_purchases = ['Finn', 'Simone', 'Aaron', 'Dominic']
 
 customer_discount = []
 
-# For Loop
+# # For Loop
+# for c in over_60_years:
+#     if c in over_5_purchases:
+#         customer_discount.append(c)
+# print(customer_discount)
 
 # List comprehension
+customer_discount = [o for o in over_60_years if o in over_5_purchases]
+print(customer_discount)
