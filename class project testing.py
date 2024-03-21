@@ -10,7 +10,11 @@ password = ''
 sys_id = ''
 sys_password = ''
 
+#list to handle error messages
+error_messages = ['Username taken', 'Invalid Username', 'Invalid Password']
 
+#Taken Usernames
+taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 
 
 
