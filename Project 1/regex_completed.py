@@ -31,7 +31,7 @@ else:
 
 # I wish to match  any of the letters 'bde' in a string, let's use square brackets.
 
-teststring = 'Happy irthay to Quincy Jons@'
+teststring = 'Happy_ irthay to Quincy Jons@'
 my_match = bool(re.search('[_]', teststring)) 
 
 print(my_match)
