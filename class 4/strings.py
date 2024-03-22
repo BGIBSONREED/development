@@ -94,8 +94,6 @@
 # test_1 = "abcdef"
 # test_2 = '%$123'
 
-# print(test_1.isalnum())
-# print(test_2.isalnum())
 
 # ex_8 = '123*' # am I alphanumeric (false due to the asterik)
 

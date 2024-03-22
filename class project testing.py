@@ -1,3 +1,4 @@
+import re
 # Introductory Print statement (rules)
 
 
@@ -17,12 +18,13 @@ error_messages = ['Username taken', 'Invalid Username', 'Invalid Password']
 taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 
 
+
 #starting loop
 while True:
     username = input('Please enter your username. ')
     # password = input('Please enter your password. ')
    
-    #test username
+#test username
     #test for taken usernames
    
     if username in taken_usernames:
@@ -36,11 +38,30 @@ while True:
         print(error_messages[1])
         continue
 
+    #testing if username has number
+    # def contains_number(value):
+    #  username = re.findall('[0-9]+', username)
+    #  return True if contains_number else False
+
+    username = ''
+    if True in [d.isalnum() for d in username]:
+        print('The string contains a number')
+    else: 
+        print(error_messages[1])
+        continue
+
+   
+    
+    # print(error_messages[1])
+    # continue
+
+    
+# #test for underscore
+    
 
     print('We have passed testing')
     break
-
-
+    
     #test password
 
 
@@ -54,45 +75,12 @@ while True:
 
 
 
-# print(username)
-# # print(password)
-# 
-# Taken usernames
-# username = 'breed'
-# taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 
-# for d in username:
-#     if d in taken_usernames:
-#         print('Username taken')
-#     else:
-#         print('Login Successful! ')
 
-#     user_output = input("Please enter your password: ")
 
-# # if username and password:
-#     print("Login Successful")
-# else:
-#     print("Invalid Username or Password")
-    
 
-#     print("Please re-enter correct Username and Password ")
+
           
-
-# # if username in taken_usernames:
-# #     print("Username taken")
-# # # else:
-# # #     print("Username successful")
-
-
-# # # if username:
-# # #      print('Login successful')
-# # # else: 
-# # #      print('Invalid username')
-
-# # # if password:
-# # #      print('Login successful')
-# # # else: 
-# # #      print('Invalid password') 
 
      
 # if len(user_output) >= 8:
@@ -117,23 +105,5 @@ while True:
 # else:
 #     print(f"Test Failed: {user_output} no a \'_' symbol")
 
-# user_output = []
+ 
 
-# userin = ''
-
-# while userin != 'stop':
-#     username = input("Please enter username, or 'stop' to end the loop: ")
-#     print(username)
-# while username != user_input and password != user_output:
-#      print("Incorrect username or password")
-# user_input = input("Please enter your username: ")
-# user_output = input("Please enter your password: ")
-# print("Login Successful") 
-
-    
-
-#     userin = " "
-# while userin != 'stop':
-#      if userin == 'stop':
-#         break
-#      print(userin) 
