@@ -39,30 +39,19 @@ while True:
         continue
 
     #testing if username has number
-    # def contains_number(value):
-    #  username = re.findall('[0-9]+', username)
-    #  return True if contains_number else False
-
-    username = ''
-    if True in [d.isalnum() for d in username]:
-        print('The string contains a number')
-    else: 
-        print(error_messages[1])
-        continue
-
-   
     
-    # print(error_messages[1])
-    # continue
-
     
-# #test for underscore
+    # #test for underscore
     
 
     print('We have passed testing')
     break
     
     #test password
+if len(user_output) >= 8:
+    print(f'Test Passed: {user_output} is greater than 8 characters')
+else:
+    print(f' Test Failed: {user_output} is less than 8 characters')
 
 
 

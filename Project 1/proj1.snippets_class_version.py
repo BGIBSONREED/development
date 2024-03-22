@@ -60,36 +60,36 @@ error_messages = ['Error message 1', 'Error Message 2', 'This is my new message'
 
 # If input is a number we will go through this while loop and continue through, if not, we will send the user back to the beginning
 
-while True:
-    userinput = input("What is your test string? ")
+# while True:
+#     # userinput = input("What is your test string? ")
 
-    if userinput.isnumeric():
-        print("This is a number, we will stay in the loop")
-    else:
-        print("Not a number, have the user try again")
-        continue
+#     if userinput.isnumeric():
+#         print("This is a number, we will stay in the loop")
+#     else:
+#         print("Not a number, have the user try again")
+#         continue
 
-    print("if you see this line of code, we are still in the loop")
-    break
+#     print("if you see this line of code, we are still in the loop")
+#     break
 
 
 ''' Password requirements '''
 
-test_string = 'c1234567'
+test_string = 'abcdef'
 # At least 8 characters long
 
 # Contains at least one uppercase letter
-one_uppercase = False
-for t in test_string:
-    if t.isupper():
-        one_uppercase = True
+# one_uppercase = False
+# for t in test_string:
+#     if t.isupper():
+#         one_uppercase = True
 
 # print('Contains at least one uppercase letter? ', one_uppercase)
 
 
 # Even better, is the any function! Tests if any of items in iterable is true
-# any_uppercase = any(u.isupper() for u in test_string)
-# print('Contains at least one uppercase letter? ', any_uppercase)
+any_number = any(u.isdecimal() for u in test_string)
+print('Contains at least one number? ', any_number)
 
 # Or Regular Expressions match method
 
