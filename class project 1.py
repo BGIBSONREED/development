@@ -1,9 +1,9 @@
 
 #testing for number in string
 
-username = 'breed_24'
+contain_numbers = 'breed_24'
 
-for c in username:
+for c in contain_numbers:
     if c.isdigit():
         print('I am a digit')
     else:
