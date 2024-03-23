@@ -8,8 +8,8 @@ import re
 username = ''
 password = ''
 
-sys_id = ''
-sys_password = ''
+# sys_id = ''
+# sys_password = ''
 
 #list to handle error messages
 error_messages = ['Username taken', 'Invalid Username', 'Invalid Password']
@@ -17,41 +17,54 @@ error_messages = ['Username taken', 'Invalid Username', 'Invalid Password']
 #Taken Usernames
 taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 
-
-
 #starting loop
 while True:
     username = input('Please enter your username. ')
     # password = input('Please enter your password. ')
    
-#test username
-    #test for taken usernames
+#Test username
+    # test for taken usernames
    
     if username in taken_usernames:
         print(error_messages[0])
         continue
     
-    #test for lowercase letter
+    # Test for lowercase letter
     lowercase_letter_test = username[0]
+    teststring = 'breed_24'
  
     if lowercase_letter_test.isupper():
         print(error_messages[1])
         continue
 
-    #testing if username has number
-    
-    
-    # #test for underscore
-    
+    if bool(re.search('[_]', teststring)):
+        print(error_messages[1])
+        continue
 
-    print('We have passed testing')
+    if username.isdigit():
+        print(f'{username} I am a digit')
+    else:
+        print('I am not a digit')
+        continue
+
+    print('Username test passed')
     break
+
+    # Test for at least one number
+      
     
+    #test if username has a underscore
+
+
+
+
+
+   
     #test password
-if len(user_output) >= 8:
-    print(f'Test Passed: {user_output} is greater than 8 characters')
-else:
-    print(f' Test Failed: {user_output} is less than 8 characters')
+# if len(user_output) >= 8:
+#     print(f'Test Passed: {user_output} is greater than 8 characters')
+# else:
+#     print(f' Test Failed: {user_output} is less than 8 characters')
 
 
 

@@ -1,12 +1,12 @@
 
 #testing for number in string
 
-contains_number = 'abd123'
+username = 'breed_24'
 
-for c in contains_number:
+for c in username:
     if c.isdigit():
-        print(f'{c}am a digit')
+        print('I am a digit')
     else:
-        print('i am not a digit')
+        print('I am not a digit')
 
 
