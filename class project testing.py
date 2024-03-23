@@ -12,8 +12,8 @@ import re
 username = ''
 password = ''
 
-# sys_id = ''
-# sys_password = ''
+sys_id = ''
+sys_password = ''
 
 #list to handle error messages
 error_messages = ['Username taken', 'Invalid Username', 'Invalid Password']
@@ -22,71 +22,96 @@ error_messages = ['Username taken', 'Invalid Username', 'Invalid Password']
 taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 
 # Allowed characters
-avail_characters = '!?@#$^&*_-'
+avail_characters = ['!','?','@','#','$','^','&','*','_','-']
 
 #starting loop
-while True:
-    # username = input('Please enter your username. ')
-    password = input('Please enter your password. ')
+# while True:
+#  username = input('Please enter your username. ')
+ password = input('Please enter your password. ')
    
-# #Test username
-#    # test for taken usernames
-   
-#     if username in taken_usernames:
-#         print(error_messages[0])
-#         continue
-    
-#     # Test for lowercase letter
-#     lowercase_letter_test = username[0]
-#     teststring = 'breed_24'
+#Test username
+   # test for taken usernames
+#  if username in taken_usernames:
+#     print(error_messages[0])
+#     continue
  
-#     if lowercase_letter_test.isupper():
+#      # Test for lowercase letter
+#  lowercase_letter_test = username[0]
+ 
+#  if lowercase_letter_test.isupper():
 #         print(error_messages[1])
 #         continue
 
+''''test for underscore --- unable to get this to run'''
+#  username = 'breed_24'
+#  re.search('\_', username)
+# #  print(error_messages[1])
+#  continue
 
-# #test for number
-    # contain_numbers = 'breed_24'
+'''Test for alphanumeric---unable to get this to run'''
+# for c in contain_numbers:
+#  if c.isdigit():
+#     print('I am a digit')
+#     break
+  
+#Testing for password
+
+ #Has 8 character
+if len(password) >= 8:
+  print(f'Test Passed: {password} is greater than 8 characters')
+
+
+
+#test for number
+# contain_numbers = 'breed_24'
              
-    # for c in contain_numbers:
-    #       if c.isdigit():
-    #          print('I am a digit')
-    # else:
-    #     print('I am not a digit')
+# for c in contain_numbers:
+#      if c.isdigit():
+#       print('I am a digit')
+#      break
+# else:
+#      print('I am not a digit')
+#      continue
 
 # #  test if username has a underscore
     
-#     teststring = 'breed_24'
-#     my_match = bool(re.search('[_]', teststring))
-    # print(my_match) 
  
      
-    # avail_characters = '!?@#$^&*_-'
+#avail_characters = '!?@#$^&*_-'
     #test password
 
+# testing for length of password
+#     userinput = input("Please enter a password: ")
+    
+#     if userinput.isalnum():
+#         print("Error: Not a number")
+#         break
+    
 
-# if len(user_output) >= 8:
-#     print(f'Test Passed: {user_output} is greater than 8 characters')
-# else:
-#     print(f' Test Failed: {user_output} is less than 8 characters')
 
+# # Contains no spaces
+# has_space = re.search(r'\s', password)
+# if not has_space:
+#         print(f'Test Passed: {password} contains no spaces')
+
+
+#uppercase
+# letter_test = username[0]
+
+
+# contains_num = re.search(r'\d' , letter_test)
+# if contains_num:
+#     print(f'Test Passed: {letter_test} contains a number')
+   
+# else: 
+#     print(f'Test Failed: {letter_test} does not contain a number')
+        
 
 
     #authenticate username and password
 
 
-    #reprompt user to login - this is where I use sys_id/sys_password
-    
-
-
-
-
-
-
-
-
-
-          
+    #reprompt user to login - this is where I use sys_id/sys_password         
 
      
 # if len(user_output) >= 8:
@@ -100,7 +125,7 @@ while True:
 #        one_uppercase = True
 # print('Contains at least one uppercase letter? ', one_uppercase)
 
-# one_lowercase = False
+# # one_lowercase = False
 # for t in user_output:
 #     if t.islower():
 #        one_lowercase = True

@@ -31,7 +31,7 @@ import re  # Imports our regular expression module
 
 # I wish to match  any of the letters 'bde' in a string, let's use square brackets.
 
-teststring = 'Happy_ irthay to Quincy Jons@'
-my_match = bool(re.search('[_]', teststring)) 
+username = 'breed_24'
+my_match = bool(re.search('[_]', username)) 
 
 print(my_match)
