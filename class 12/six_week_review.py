@@ -127,27 +127,40 @@ A string is considered a valid identifier if it only contains alphanumeric lette
 
 # convert to lowercase
 
-make_me_lower_case = 'HALLOWEEN'
-
+# make_me_lower_case = 'HALLOWEEN'
+# make_me_lower_case = make_me_lower_case.lower()
+# print(make_me_lower_case)
 
 # convert to uppercase
-make_me_upper_case = 'valentines day'
+# make_me_upper_case = 'valentines day'
+# make_me_upper_case = make_me_upper_case.upper()
+# print(make_me_upper_case)
 
 
 # Is this proper title case?
+# test_string = 'the eye of the tiger'
+# title_check = test_string.title()
+# print(title_check)
 
-# Put all list items in a string
-my_list = ['jean', 'sarah', 'larry']
-
+# Put all list items in a string #method is join
+# my_list = ['jean', 'sarah', 'larry']
+# name_string = '*'.join(my_list)
+# print(name_string)
 
 # Replace J with B
 # test_name = 'jerry'
+# name_test = test_name.replace('j', 'b')
+# print(name_test)
 
 # split this string and place each word in a list
-string = 'I would like to split up this string'
+# split_string = 'I would like to split up this string'
+# result_string = split_string.split()
+# print(result_string)
 
 # Check if this string starts with a letter w
-str = 'zootopia'
+# str = 'zootopia'
+# result = str.startswith('w')
+# print(result)
 
 
 ''' Conditionals - if/else statements '''
