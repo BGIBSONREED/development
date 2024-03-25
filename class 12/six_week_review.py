@@ -88,15 +88,18 @@
 # Check if the following string is lowercase, use meaningful variable names
 
 
-day = 'tuesday'
-check_lower = day.islower()
-print(check_lower)
+# day = 'tuesday'
+# check_lower = day.islower()
+# print(check_lower)
 
 
-# Check if all the characters in the text are in upper case:
-# The isupper() method returns True if all the characters are in upper case, otherwise False.
+# # Check if all the characters in the text are in upper case:
+# # The isupper() method returns True if all the characters are in upper case, otherwise False.
 
 # word = 'WEDNESDAY'
+# check_upper = day.isupper()
+# print(check_upper)
+
 
 
 ''' The isidentifier() method returns True if the string is a valid identifier, otherwise False.
@@ -105,13 +108,21 @@ A string is considered a valid identifier if it only contains alphanumeric lette
 
 # Use the isidentifier method on the following username variables
 
-username = '#$(@#@#$#@)'
+# username = '#$(@#@#$#@)'
+# us_chck1 = username.isidentifier()
+# print(us_chck1)
 
-username2 = 'simonsays_90'
+# username2 = 'simonsays_90'
+# us_chck2 = username2.isidentifier()
+# print(us_chck2)
 
-username3 = '3492_sdfsdf'
+# username3 = '3492_sdfsdf'
+# us_chck3 = username3.isidentifier()
+# print(us_chck3)
 
-username4 = 'hello*world'
+# username4 = 'hello*world'
+# us_chck4 = username4.isidentifier()
+# print(us_chck4)
 
 
 # convert to lowercase
