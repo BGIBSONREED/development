@@ -25,24 +25,24 @@ while True:
 
 # #     # Not enough characters
 
-    # if len(user_input) >= 10:
-    #     print(f'Test Passed: {user_input} is greater than 10 characters')
-    #     break
-    # else:
-    #     print(f' Test Failed: {user_input} is less thna 10 characters')
-    #     continue
+    if len(user_input) >= 10:
+        print(f'Test Passed: {user_input} is greater than 10 characters')
+        break
+    else:
+        print(f' Test Failed: {user_input} is less thna 10 characters')
+        continue
     
 # #     # Contain at least 1 number
 # print("Lets test for contains 1 number")
 
 #     # Contains at least 1 capital letter
     
-    contains_num = re.search(r'\d' , user_input )
-    if contains_num:
-        print(f'Test Passed: {user_input} contains a number')
-    continue
-else: 
-    print(f'Test Failed: {user_input} does not contain a number')
+#     contains_num = re.search(r'\d' , user_input )
+#     if contains_num:
+#         print(f'Test Passed: {user_input} contains a number')
+#     continue
+# else: 
+#     print(f'Test Failed: {user_input} does not contain a number')
     
 
 #     Contains '@' symbol

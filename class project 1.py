@@ -20,3 +20,7 @@
 # my_match = bool(re.search('[_]', username)) 
 
 # print(my_match)
+#Contains no spaces
+# has_space = re.search(r'\s', user_input)
+# if not has_space:
+#     print(f'Test Passed: {user_input} contains no spaces')

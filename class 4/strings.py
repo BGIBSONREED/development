@@ -166,3 +166,8 @@
 
 # length_of_word = len(user_word_input) #length of our word input
 
+password = ''
+userinput = input('please enter your password')
+for c in password:
+     if c.isdigit():
+      print('I am a digit')

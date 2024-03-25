@@ -67,7 +67,7 @@ error_messages = ['Error message 1', 'Error Message 2', 'This is my new message'
 #         print("This is a number, we will stay in the loop")
 #     else:
 #         print("Not a number, have the user try again")
-#         continue
+#         continue=
 
 #     print("if you see this line of code, we are still in the loop")
 #     break

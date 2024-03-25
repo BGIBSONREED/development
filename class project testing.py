@@ -27,7 +27,7 @@ avail_characters = ['!','?','@','#','$','^','&','*','_','-']
 #starting loop
 # while True:
 #  username = input('Please enter your username. ')
- password = input('Please enter your password. ')
+# password = input('Please enter your password. ')
    
 #Test username
    # test for taken usernames
@@ -49,19 +49,20 @@ avail_characters = ['!','?','@','#','$','^','&','*','_','-']
 #  continue
 
 '''Test for alphanumeric---unable to get this to run'''
-# for c in contain_numbers:
-#  if c.isdigit():
-#     print('I am a digit')
-#     break
+any_number = any(u.isdecimal() for u in username)
+print('Contains at least one number? ', any_number)
+
   
 #Testing for password
 
  #Has 8 character
-if len(password) >= 8:
-  print(f'Test Passed: {password} is greater than 8 characters')
+password = input("Please enter password. ")
 
-
-
+if len(password) <= 8:
+    print("Password valid")  
+else:
+    print('invalid') 
+    
 #test for number
 # contain_numbers = 'breed_24'
              
