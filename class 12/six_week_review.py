@@ -167,27 +167,55 @@ A string is considered a valid identifier if it only contains alphanumeric lette
 
 # Check if num 1 is greater than num 2. Print the results to the user and use a formatted string
 
-num_1 = 10
-num_2 = 9
+# num_1 = 7
+# num_2 = 9
+
+# if num_1 > num_2:
+#    print(f'{num_1} Is greater than {num_2}')
+# else:
+#    print(f'{num_2} Is greater than {num_1}')
 
 
 ''' Loops - For/While'''
 
 # Write a while loop that will count from 0 to 50
+# start = 0
+# end = 50
+
+# while start <= end:
+#     print(start)
+#     start += 1
 
 
 # Write a while loop that will count down from 65 to 25
+# start = 65
+# end = 25
+
+# while start >= end:
+#     print(start)
+#     start -= 1 #the 1 represents each time number less by
 
 
 
 # Write a while loop that will ask start at 100 and count down to 50, however, put some logic into the loop so the loop stops at 75
- 
+# start = 100
+# end = 50
+
+# while start >= end:
+#     print(start)
+#     start -= 1 
+#     if start == 75:
+#         print(f'The value of start is {start}')
+#         break
 
 # Write a for loop that will loop through the string below and copy/move these letters to the new empty string'''
 
-str_1 = 'Have a happy birthday'
-str_2 = ''
+# str_1 = 'Have a happy birthday'
+# str_2 = ''
 
+# for s in str_1: #looping through
+#     str_2 += s # adding every character from str1 to str2
+# print(str_2)
 
     
 ''' Loops & Conditionals'''
@@ -195,24 +223,49 @@ str_2 = ''
     
 num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+# for n in num_list:
+#     if n % 2 == 0:
+#         print(f' {n} is even')
+#     else:
+#         print(f' {n} is odd')
 
 
+        
 # write a for loop to loop through this string and tell the user if the number is vowel or a consonant
 
-vowels = 'aeiou'
-my_string = 'abracadabra'
+# vowels = 'aeiou'
+# my_string = 'abracadabra'
 
-
+# for m in my_string:
+#     if m in vowels:
+#         print(f' {m} is a vowel')
+#     else:
+#         print(f' {m} is consonant')
 
 
 # In a while loop, ask the user for their favorite animal. If the word is equal to giraffe, we will tell the user congratulations and end the loop. Otherwise we will keep prompting the user.
 
-
-
-
+# while True:
+#     fav_animal = input('What is your favorite animal ')
+#     fav_animal = fav_animal.strip() # to remove spaces
+#     fav_animal = fav_animal.casefold()
+ 
+#     if fav_animal == 'giraffe':
+#         print('Congratulations')
+#         break
+#     else:
+#         continue
 
 
 # In a while loop, ask the user for a word in all lowercase. If the string is not all lowercase, reprompt the user until the condition is met
+# while True:
+#    lower_case = input('What is your lowercase word ')
+
+#    if lower_case.islower():
+#       print('Thank you for your lowercase letter ')
+#       break
+#    else:
+#       continue
 
 # HINT The isupper() method returns True if all the characters are in upper case, otherwise False.
 
@@ -222,13 +275,33 @@ my_string = 'abracadabra'
 
 # test_word = '1helloH'
 
+# first_char = test_word[0]
+# print(first_char)
 
+# last_char = test_word[len(test_word) - 1]
+# print(last_char)
+
+# while True:
+#     user_input = input("Enter a string: ")
+#     user_input = user_input.strip()
+#     if user_input[0].isnumeric() and user_input[-1].isupper():
+#        print("Congratulations")
+#        break
+#     else:
+#         continue
 
 ''' Lists '''
 
 # Loop through the full list, and copy all the items in that list into the empty list
-full_list = ['Move', 'me', 'to', 'an', 'empty', 'list', 'with', 'append']
-empty_list = []
+# full_list = ['Move', 'me', 'to', 'an', 'empty', 'list', 'with', 'append']
+# empty_list = []
+
+# while True:
+#  for f in full_list:
+#     if f not in empty_list: # if the item doesn't exist in empty list
+#      empty_list.append(f) # we will add it
+#      print(empty_list)
+
 
 
 # Lets practice some more indexing
@@ -236,13 +309,17 @@ empty_list = []
 my_super_list = [['superman', 'wonderwoman','batman'],['spiderman','captain america','ironman'],['aquaman']]
 
 # Create a variable and assign it to wonderwoman via indexing
-
+wonder_woman = my_super_list[0][1]
+print(wonder_woman)
 
 # Create a variable and assign it to spiderman via indexing
+spider_man = my_super_list[1][0]
+print(spider_man)
 
 
 # Create a variable and assign it to aquaman via indexing
-
+aqua_man = my_super_list[2][0]
+print(aqua_man)
 
 # Using a for loop, create a new list that contains any students without the letter a
 
