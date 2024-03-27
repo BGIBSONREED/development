@@ -243,7 +243,7 @@ num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 #         print(f' {m} is consonant')
 
 
-# In a while loop, ask the user for their favorite animal. If the word is equal to giraffe, we will tell the user congratulations and end the loop. Otherwise we will keep prompting the user.
+# # In a while loop, ask the user for their favorite animal. If the word is equal to giraffe, we will tell the user congratulations and end the loop. Otherwise we will keep prompting the user.
 
 # while True:
 #     fav_animal = input('What is your favorite animal ')
@@ -257,7 +257,7 @@ num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 #         continue
 
 
-# In a while loop, ask the user for a word in all lowercase. If the string is not all lowercase, reprompt the user until the condition is met
+# # In a while loop, ask the user for a word in all lowercase. If the string is not all lowercase, reprompt the user until the condition is met
 # while True:
 #    lower_case = input('What is your lowercase word ')
 
@@ -267,19 +267,19 @@ num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 #    else:
 #       continue
 
-# HINT The isupper() method returns True if all the characters are in upper case, otherwise False.
+# # HINT The isupper() method returns True if all the characters are in upper case, otherwise False.
 
 
         
-# Create a while loop, We will ask the user for a string, the first character of the string must be a number, the last character must be a capital letter to pass testing. Otherwise the user must keep trying.
+# # Create a while loop, We will ask the user for a string, the first character of the string must be a number, the last character must be a capital letter to pass testing. Otherwise the user must keep trying.
 
-# test_word = '1helloH'
+# # test_word = '1helloH'
 
-# first_char = test_word[0]
-# print(first_char)
+# # first_char = test_word[0]
+# # print(first_char)
 
-# last_char = test_word[len(test_word) - 1]
-# print(last_char)
+# # last_char = test_word[len(test_word) - 1]
+# # print(last_char)
 
 # while True:
 #     user_input = input("Enter a string: ")
@@ -290,9 +290,9 @@ num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 #     else:
 #         continue
 
-''' Lists '''
+# ''' Lists '''
 
-# Loop through the full list, and copy all the items in that list into the empty list
+# # Loop through the full list, and copy all the items in that list into the empty list
 # full_list = ['Move', 'me', 'to', 'an', 'empty', 'list', 'with', 'append']
 # empty_list = []
 
