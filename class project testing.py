@@ -27,26 +27,39 @@ avail_characters = ['!','?','@','#','$','^','&','*','_','-']
 #starting loop
 while True:
     username = input('Please enter your username. ')
-    # password = input('Please enter your password. ')
+    # password = input('Please enter your password. ')  
+   
    
 # #Test username
   #test for taken usernames
     if username in taken_usernames:
         print(error_messages[0])
         continue
+   
+      
+#testinfg ro
+    lowercase_letter_test = username[0]
  
-# #      # Test for lowercase letter
-# #  lowercase_letter_test = username[0]
- 
-# #  if lowercase_letter_test.isupper():
-# #         print(error_messages[1])
-# #         continue
+    if lowercase_letter_test.isupper():
+        print(error_messages[1])
+        continue
+    else:
+        break
 
-# ''''test for underscore --- unable to get this to run'''
-# #  username = 'breed_24'
-# #  re.search('\_', username)
-# # #  print(error_messages[1])
-# #  continue
+#testing username has a number
+result = bool(re.search('[_]', username))
+
+if result:
+   print(result)
+
+user_num = username.isidentifier()
+if user_num:
+    print('Login Successful')
+    
+
+ 
+
+
 
 # '''Test for alphanumeric---unable to get this to run'''
 # any_number = any(u.isdecimal() for u in username)

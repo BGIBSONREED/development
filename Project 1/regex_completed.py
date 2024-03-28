@@ -12,17 +12,17 @@ import re  # Imports our regular expression module
 
 # Find a string with 7 characters starts with a g and ends with an e
 
-# animal = 'giraffe'
-# result = re.search("^g.....e$", animal)
+animal = 'giraffe'
+result = re.search("^g.....e$", animal)
 # print(result)
 
 
-# # How does this look in an if statement?
+# How does this look in an if statement?
 
-# if result:
-#     print("We have a match")
-# else:
-#     print("Sorry no match")
+if result:
+    print("We have a match")
+else:
+    print("Sorry no match")
 
 
 # # How does this look in a ternary operator?
