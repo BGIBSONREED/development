@@ -9,13 +9,13 @@ import re
 
 
 
-#initialize my variables
+#My Variables
 user_name = 'breed_24'
 password = 'Spring@2024'
-re_prompt_user =  'breed_24', 'Spring@2024'
+# re_prompt_user =  'breed_24', 'Spring@2024'
 
-sys_id = 'user_name'
-sys_password = 'user_password'
+# sys_id = 'user_name'
+# sys_password = 'user_password'
 
 #list to handle error messages
 error_messages = ['Username taken', 'Invalid Username', 'Invalid Password']
@@ -24,22 +24,7 @@ error_messages = ['Username taken', 'Invalid Username', 'Invalid Password']
 taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 
 #We are starting the loop
-while True:
-    user_name = input('Please enter your username. ')
- 
-#Testing for taken usernames
-    if user_name in taken_usernames:
-        print(error_messages[0])
-        continue
-         
-#Testing for lowercase
-    lowercase_letter_test = user_name[0]
- 
-    if lowercase_letter_test.isupper():
-        print(error_messages[1])
-        continue
-    else:
-        break
+
 
 #Testing username has a number
 while True:
