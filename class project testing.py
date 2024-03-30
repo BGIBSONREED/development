@@ -10,7 +10,7 @@ import re
 
 
 #initialize my variables
-username = 'breed_24'
+user_name = 'breed_24'
 password = 'Spring@2024'
 re_prompt_user =  'breed_24', 'Spring@2024'
 
@@ -28,7 +28,7 @@ while True:
     user_name = input('Please enter your username. ')
  
 #Testing for taken usernames
-    if username in taken_usernames:
+    if user_name in taken_usernames:
         print(error_messages[0])
         continue
          
@@ -42,13 +42,16 @@ while True:
         break
 
 #Testing username has a number
-contains_num = re.search(r'\d', user_name)
+while True:
+    contains_num = re.search(r'\d', user_name)
 
-    if contains_num: # not sure why this is dotted red
+    if contains_num: 
         print(f'Test Passed: {user_name} contains a number')
+        
     else: 
         print(f'Test Failed: {user_name} does not contain a number')
         continue
+    
 
 #Testing for underscore
     if '@' in user_name:
@@ -68,7 +71,8 @@ contains_num = re.search(r'\d', user_name)
         continue
     
 # Password contains at least 1 number
-contains_num = re.search(r'\d', user_password)
+    contains_num = re.search(r'\d', user_password)
+while True:
 
     if contains_num: # not sure why this is dotted red
         print(f'Test Passed: {user_password} contains a number')
@@ -103,14 +107,16 @@ contains_num = re.search(r'\d', user_password)
         print(f'Login Successful')
         break
     else:
-        print
-    
+        print(f'Test Failed: {user_password} contains spaces')
+        continue
+
+while True:
     re_prompt_user = input('Congraulations on signing up, please login: ')
 
     if sys_id == re_prompt_user:
         print('Congrautlations on logging in')
         break
     else:
-        print("Long has failed please start again")
+        print("Login has failed please try again")
         continue
 
