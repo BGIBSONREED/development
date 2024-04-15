@@ -233,14 +233,14 @@ num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         
 # write a for loop to loop through this string and tell the user if the number is vowel or a consonant
 
-# vowels = 'aeiou'
-# my_string = 'abracadabra'
+vowels = 'aeiou'
+my_string = 'abracadabra'
 
-# for m in my_string:
-#     if m in vowels:
-#         print(f' {m} is a vowel')
-#     else:
-#         print(f' {m} is consonant')
+for m in my_string:
+    if m in vowels:
+        print(f' {m} is a vowel')
+    else:
+        print(f' {m} is consonant')
 
 
 # # In a while loop, ask the user for their favorite animal. If the word is equal to giraffe, we will tell the user congratulations and end the loop. Otherwise we will keep prompting the user.

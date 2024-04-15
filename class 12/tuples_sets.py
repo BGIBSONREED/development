@@ -274,50 +274,78 @@ The set of employees that know Python or JavaScript, but not both
 '''
 
 #instructions
-# The set of employees that know both Python and JavaScript
-# The set of employees that know JavaScript, but not Python
-# The set of employees that know Python or JavaScript, but not both
+('''
+Python and JS Developer Tracker
+Instructions
+Input 's' or 'stop' at anytime to exit program
+To add a Python developer type 'p' when prompted
+To add a Javascript developer type 'js' when prompted.''')
+
 #initialize variables
-python = 
-javascript = ()
-both = ()
+
+#data collection sets
+python_devs, js_devs = set(), set() #creating 2 empty sets
+
+# user input
+dev_type_input, dev_name_input = '', ''
 
 #put our error messages in a tuple
-invalid input please try again
+error_messages = ('Invalid input', 'Please try again', 'Thank you, have a nice day')
+                  
+ #while loop
+while True:
+    dev_type_input = input("Type 'P' for Python Developer, 'JS' for Javascript developer, or 'STOP' to exit program: ").lower()
+# #if statements, break keyword, continue        
+    if dev_type_input == 'stop': # this gives the user an exit
+        print(error_messages[2])
+        break
 
-#while loop
+    #Get a dev type, add to our sets, and offer exit    
+    if dev_type_input == 'p' or dev_type_input == 'js':
+        dev_name_input = input('Enter developer name: ').lower()
 
+        if dev_name_input == 'stop':
+            print(error_messages[2])
+            break
+        elif dev_type_input == 'p':
+            python_devs.add(dev_name_input.title())
+        else:
+            js_devs.add(dev_name_input.title())
+    else:
+        print(error_messages[0])
+        continue
 
-#inputs
-
-
-#string methods for cleanup if needed.strip(), .title()
-
-#if statements, break keyword, continue
-
-
-#create sets
-
-
+#more variables
 #print statement, formatted strings, to display set results symetric difference, union, intersection
 
+    both_languages = python_devs.intersection(js_devs) #everybody who knows both
+    know_js_not_python = js_devs.difference(python_devs) #know js not python - difference
+    know_python_or_js_notboth = js_devs.symmetric_difference(python_devs) # who knows python or js but not both
 
+    print(both_languages, know_js_not_python, know_python_or_js_notboth)
+    break
 
+# If sets are empty, display no data for user
+    if both_languages == set():
+        both_languages = 'No data'
 
+    if know_js_not_python == set():
+        know_js_not_python = 'No data'
 
+    if know_python_or_js_notboth == set():
+        know_js_not_python = 'No data'
 
+    print('RESULTS')
+    print('---------------------------')
+    print(f'The following developers know both languages: {both_languages}')
+    print(f'The following developers know javascript but not PYTHON: {know_js_not_python}')
+    print(f'The following developers know PYTHON or JavaScript but not both: {know_python_or_js_notboth}')
+    print('------------------------------------------')
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
+                           
+                           
+    
 
 
