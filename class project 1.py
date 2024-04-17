@@ -8,8 +8,8 @@ import re
 # If your password or username does not meet the above requirements you will be prompted with a message to try again
 
 #My Variables
-user_name = 'breed_24'
-password = 'Spring@2024'
+user_name = ''
+password = ''
 taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 error_messages = ['Username taken', 'Invalid Username', 'Invalid Password','Invalid username and password']
 
@@ -28,6 +28,10 @@ while True:
         print(error_messages[1])
         continue
 
+    #use isidentifer method to check if string is a valid identifier, if its false we are going to send them back to the beginning
+
+
+
     any_uppercase = any(p.isupper() for p in user_password)
 
     if not any_uppercase:
@@ -37,7 +41,7 @@ while True:
     
 #contains a number test  
 
-    contains_num = re.search(r'\d', user_name)
+    # contains_num = re.search(r'\d', user_name)
     contains_num = re.search(r'\d', user_password)
         
     if not contains_num: 

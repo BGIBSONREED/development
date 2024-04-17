@@ -1,4 +1,6 @@
 from statistics import mode
+import pandas as pd
+
 
 ''' Fun facts about dictionaries 
 
@@ -153,7 +155,7 @@ Hint: Use the items() method
 
 '''
 
-words = {"color":"blue", "veggie":"radish", "vehicle": "bike", "mood": "happy", "pet":"cat"}
+# words = {"color":"blue", "veggie":"radish", "vehicle": "bike", "mood": "happy", "pet":"cat"}
 
 # print(words.items())
 
@@ -233,11 +235,54 @@ records = [{'name': 'Bob', 'title': 'manager', 'salary': 50000},\
 Output: {'manager': 50000, 'developer': 62500}
 '''
 
+
 records = [{'name': 'Bob', 'title': 'manager', 'salary': 50000},\
            {'name': 'Alice', 'title': 'developer', 'salary': 60000},\
-           {'name': 'David', 'title': 'developer', 'salary': 65000},
-           {'name': 'Alice', 'title': 'consultant', 'salary': 25000},\
-           {'name': 'David', 'title': 'consultant', 'salary': 40000}]
+           {'name': 'Joe', 'title': 'developer', 'salary': 65000},
+           {'name': 'Clair', 'title': 'consultant', 'salary': 25000},\
+           {'name': 'Susan', 'title': 'consultant', 'salary': 40000}, 
+           {'name': 'Isaiah', 'title': 'sales', 'salary': 120000},
+           {'name': 'Brenetta', 'title': 'sales', 'salary': 1500000}]
+
+
+# Our output dictionaries
+title_salary_dict = {} # this will capture titles and salary totals
+title_count_dict = {} # this will capture title count
+
+# loop through our list of dictionaries
+for r in records:
+    title = r['title']
+    salary = r['salary']
+    #if the job title does not currently exist, we will add the title and the salary
+    if title not in title_salary_dict:
+        title_salary_dict[title] = salary
+        title_count_dict[title] = 1
+    else:
+        # otherwise, we will update the salary, and update the count of titles
+        title_salary_dict[title] += salary
+        title_count_dict[title] += 1
+
+# Lets take a look at our output
+print('All titles and sum of salaries', title_salary_dict)
+print('Titles, and the count of employees', title_count_dict)
+
+result = {s:float(title_salary_dict[s])/title_count_dict[s] for s in title_salary_dict}
+print(result)
+
+# pandas Solution
+
+df = pd.DataFrame.from_records(records)
+result = df.groupby('title')['salary'].mean()
+
+print(result)
+
+
+
+
+
+
+ 
+
 
 
 
