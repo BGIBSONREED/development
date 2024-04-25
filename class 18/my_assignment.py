@@ -1,8 +1,6 @@
 import name_module
 
-firstname = 'Brenetta'
-lastname = 'Reed'
+name_module.full_name('Brenetta', 'Reed')
+name_module.reverse_name('Reed', 'Brenetta')
+name_module.intials('Brenetta', 'Reed')
 
-print(name_module.full_name(firstname, lastname))
-print(name_module.reverse_name(firstname, lastname))
-print(name_module.get_intials(firstname, lastname))

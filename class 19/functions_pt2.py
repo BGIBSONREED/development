@@ -4,6 +4,17 @@ import statistics
 
 # With documentation and type hinting (optional)
 
+# def my_function(country: str = 'Norway') -> None:
+#     '''I am explaining what my country does 
+#     - country parameter with default value'''
+#     print('I am from', country)
+
+# my_function('Sweden')
+# my_function('Brazil')
+# my_function()
+
+
+
 
 '''
 Exercise
@@ -17,20 +28,33 @@ Test your function by calling it with different arguments.
 '''No documentation or type hinting'''
 
 
-test_list1 = [1,2,2,2,3,4,5,6,7,8]
-test_list2 = [3,6,7,9,10,11,2]
+# test_list1 = [1,2,2,2,3,4,5,6,7,8]
+# test_list2 = [3,6,7,9,10,11,2]
 
+# def center(my_list,use_median=False):
+#     if use_median == False:
+#         return statistics.mean(my_list)
+#     else:
+#         return statistics.median(my_list)
 
+# result = center (test_list1,True)
+# print(result)
 
 
 # '''Documentation, type hinting, shorthand if-then-else'''
 
-test_list1 = [1,2,2,2,3,4,5,6,7,8]
-test_list2 = [3,6,7,9,10,11,2]
+# test_list1 = [1,2,2,2,3,4,5,6,7,8]
+# test_list2 = [3,6,7,9,10,11,2]
 
+# def center(my_list:list, use_median: bool = False) -> float:
+#     '''Return either mean or median of a list of numbers
+#     -my_list: the list to extract mean or median 
+#     -use_median: bool to select mean or median'''
 
+#     return statistics.mean(my_list) if use_median == False else statistics.median(my_list)
 
-
+# result = center (test_list1,True)
+# print(result)
 
 
 # Returning multiple values
@@ -63,6 +87,22 @@ Mode: 5
 '''
 
 my_list = [1,2,4,5,5]
+
+def get_stats(my_list:list):    
+    return statistics.mean(my_list), statistics.median(my_list), statistics.mode(my_list)
+   
+result = get_stats(my_list)
+print(result)
+
+
+    # return stats.median(my_list)    
+    # return stats.mode
+    #  def median(2, 1, 2):
+    # if 2 > 1: # yes
+    #     if 2 > 2: # no
+    #         ...
+    #     elif 2 > 2: # also no
+ 
 
 
 '''Global variables'''
@@ -99,12 +139,12 @@ Syntax: lambda arguments : expression
 
 # Write the following functions as Lambdas
 
-def greeting(fname):
-    print(f'Hello, {fname}')
+# def greeting(fname):
+#     print(f'Hello, {fname}')
 
 
-def double_me(num):
-    return num + num
+# def double_me(num):
+#     return num + num
 
 
 '''
