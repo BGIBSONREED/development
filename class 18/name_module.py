@@ -3,7 +3,7 @@
 def full_name(firstname, lastname):
     print(firstname, lastname)
 
-def reverse_name(lastname, firstname):
+def reverse(lastname, firstname):
     print(lastname, firstname)
       
 def intials(firstname,lastname):

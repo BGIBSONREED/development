@@ -86,23 +86,23 @@ Median: 4
 Mode: 5
 '''
 
-my_list = [1,2,4,5,5]
+# my_list = [1,2,4,5,5]
 
-def get_stats(my_list:list):    
-    return statistics.mean(my_list), statistics.median(my_list), statistics.mode(my_list)
-   
-result = get_stats(my_list)
-print(result)
+# def get_stats(my_list:list)-> str:    
+#     # return statistics.mean(my_list), statistics.median(my_list), statistics.mode(my_list)
+#    my_mean = statistics.mean(my_list)
+#    my_median = statistics.median(my_list)
+#    my_mode = statistics.mode(my_list)
+#    return f'Mean:{my_mean}\nMedian: {my_median}\nMode:{my_mode}'
 
 
-    # return stats.median(my_list)    
-    # return stats.mode
-    #  def median(2, 1, 2):
-    # if 2 > 1: # yes
-    #     if 2 > 2: # no
-    #         ...
-    #     elif 2 > 2: # also no
- 
+# print(get_stats(my_list))# this is a function call in a print statement
+
+
+
+# get_stats(my_list) # this is a function call
+# print(result)
+
 
 
 '''Global variables'''
@@ -111,7 +111,7 @@ print(result)
 # def change_x():
 #     x = 'fun'
 
-# change_x()
+# change_x() # function call
 # print("Programming is", x)
 
 
@@ -129,12 +129,35 @@ Syntax: lambda arguments : expression
 '''
 
 # Function to add two numbers
+# def add_two(x, y):
+#     return x + y
+# print(add_two(5,7))
 
+# add_two = lambda x, y: x + y
+# print(add_two(5,7))
+
+# print((add_two)(5,8))
+
+# def greeting(fname):
+#     print(f'Hello,{fname}')
+
+# fname = 'Brenetta'
+
+# greeting = lambda fname: f'Hello, {fname}'
+# print(greeting(fname))
+
+
+
+# def double_me(num):
+#     return num + num
+
+# print(double_me(20))# function call, within a print statement
+
+# double_me = lambda num: num + num
+# print((double_me)(30))
 
 
 # Written as a Lambda
-
-
 
 
 # Write the following functions as Lambdas
@@ -152,9 +175,11 @@ Exercise
 Write a lambda that computes the n-th power of a number, given two arguments, num and n.
 Now, write a function that is equivalent to the lambda.
 '''
+# def power (num, n):
+#     return num ** n
+# power = lambda num, n: num **n
 
-
-
+# print(power(2,6))
 
 
 ''' Higher Order Functions
@@ -167,13 +192,23 @@ map - returns a map object(which is an iterator) of the results after applying t
 '''
 # Let's use the filter function to find the even numbers in a list
 
+def even_function(n): # this function delivers true or false, based on odd or even
+    return n % 2 == 0
+n = 6
+# print(even_function(n))
 
-
+#Apply filter to find even numbers
 my_list = [0,1,2,3,4,5,6,7,8,9,10]
 
-# Triple Me! Triple the numbers in this lsit
+even_num_filter = filter(lambda n: n % 2 == 0, my_list)
+# print(list(even_num_filter))
+
+# Triple Me! Triple the numbers in this list, using the map function.
 
 triple_me = [0,1,2,3,4,5,6]
+result = map(lambda n: n *10, triple_me)
+# print(list(result))
+
 
 # Lambda with sort
 
@@ -184,7 +219,11 @@ students = [{"name":"Kim","grade":98},
             {"name":"Torrie","grade":65},
             {"name":"Simon","grade":78}]
 
+students_by_name = sorted(students, key = lambda s: s['name'], reverse=reversed)
+# print(students_by_name)
 
+students_by_grade = sorted(students, key = lambda s: s['grade'],reverse=reversed)
+# print(students_by_grade)
 
 '''
 Assignment 6
@@ -196,6 +235,11 @@ Must contain type hinting for the parameters as well as what the function will b
 Call the function in a print statement with needed arguments
 '''
 
-
+def net_worth(assets:float, liabilities:float)-> float:
+    '''Return networth
+    - users assets
+    - users liabilities'''
+    return assets - liabilities
+print(net_worth(20000,10000))
 
 
