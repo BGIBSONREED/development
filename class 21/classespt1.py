@@ -5,16 +5,38 @@ import datetime
 Classes
 '''
 # Class Definition and Initializer
+class Point2d:
 
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+#string representation
+    def __str__(self):
+        return f'({self.x},{self.y})'
+    
+#add your object to another object of your class
+    def __add__(self, other):  
+        return Point2d(self.x + other.x, self.y + other.y) 
+        
+#subtract my object from another object
+    def __sub__(self, other):  
+        return Point2d(self.x - other.x, self.y - other.y) 
+
+#creating the object of the Point2d Class    
+point1 = Point2d(4,10)
+point2 = Point2d(5,9)
+     
 
 # Return a string representation of this object
-   
+# print(point1) 
+# print(point2)   
     
 # Adds this object to another object from the same class, return a new object.
-    
+# print(point1+point2)
     
 # Subtracts another object from this object, return a new object.
-    
+print(point1-point2)
 
 # Test equality between this object and another, return a boolean.
    
