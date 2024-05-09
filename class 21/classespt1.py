@@ -191,23 +191,23 @@ class Date:
         self.month = month
         self.day = day
 
-   # this will control what the print bulit in function displays
-    # def __str__(self):
-    #     return f'Month: {self.month:02d}\nDay: {self.day:02d}\nYear: {self.year:02d}'
+#    this will control what the print bulit in function displays
+    def __str__(self):
+        return f'Month: {self.month:02d}\nDay: {self.day:02d}\nYear: {self.year:02d}'
     
-#    #this will control what == does in your class
-#     def __eq__(self, other):
-#         if self.year == other.year and self.month == other.month and self.day == other.day:
-#             return True
-#         return False
+   #this will control what == does in your class
+    def __eq__(self, other):
+        if self.year == other.year and self.month == other.month and self.day == other.day:
+            return True
+        return False
 
     # create a method to handle less than date objects, which date came first?
-    # def __lt__(self,other):
-    #     selfdate = datetime.datetime(self.year, self.month, self.day)
-    #     otherdate = datetime.datetime(other.year, other.month, other.day)
-    #     if selfdate < otherdate:
-    #         return True
-    #     return False
+    def __lt__(self,other):
+        selfdate = datetime.datetime(self.year, self.month, self.day)
+        otherdate = datetime.datetime(other.year, other.month, other.day)
+        if selfdate < otherdate:
+            return True
+        return False
 
     def is_leap_year(self):
         if self.year % 4 == 0 and (self.year % 100 != 0 or self.year % 400 == 0):
@@ -215,11 +215,9 @@ class Date:
         return False
 
 
-
-
 my_date_info = Date(2004, 10, 4)#create the object
 second_date = Date(2004, 10, 4)
-default_date = Date(2005)
+# default_date = Date(2005)
 # print(default_date)
 
 #string representation
@@ -234,7 +232,7 @@ new_date = Date(2000,2,10)
 # print(old_date < new_date)
 
 my_new_date = Date(2008, 6, 1)
-print(my_new_date.is_leap_year())
+# print(my_new_date.is_leap_year())
 
 
 
