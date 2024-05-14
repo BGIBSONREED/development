@@ -17,21 +17,21 @@ from datetime import datetime
 
 ''' Write a function called print_even_numbers that will take in a list of integer values and will extract the even numbers from that list and write to a text file let's try different parameters in our open function x, a, w'''
 
-def print_even_numbers(my_list):
-    output_list = []
-    for m in my_list:
-        if m % 2 == 0:
-            output_list.append(m)
-    with open('even_numbers.txt', 'w') as output:
-        for o in output_list:
-            o = str(o)
-            output.writelines(o)
+# def print_even_numbers(my_list):
+#     output_list = []
+#     for m in my_list:
+#         if m % 2 == 0:
+#             output_list.append(m)
+#     with open('even_numbers.txt', 'w') as output:
+#         for o in output_list:
+#             o = str(o)
+#             output.writelines(o)
     
-    print('File Printed Successfully')
+    # print('File Printed Successfully')
 
 my_list = [1,2,3,4,5,6,7,12,14,15,21,22]
 
-print_even_numbers(my_list)
+# print_even_numbers(my_list)
 
 ''' Lets read in the song lyrics and put it into a list, but before we do, lets look at other options we have to read files in'''
 
@@ -82,13 +82,13 @@ class BankAccount:
         days_since_opened = today - open_date
         return f'Account opened {days_since_opened.days} days ago.'
     
-    def print_customer_details(self):
-        f = open("customer_details.txt", "w")
-        f.write( f'''Acct Number: {self.account_number}\nAccount holder name: {self.customer_name}\nBalance: {self.balance:.02f}\nDays since Account Opened: {self.days_since_opened()}''')
-        f.close()
+    # def print_customer_details(self):
+    #     f = open("customer_details.txt", "w")
+    #     f.write( f'''Acct Number: {self.account_number}\nAccount holder name: {self.customer_name}\nBalance: {self.balance:.02f}\nDays since Account Opened: {self.days_since_opened()}''')
+    #     f.close()
 
 
-# ac_no_1 = BankAccount("Toninho Takeo", 2345, "05-05-24", 1000 )
+ac_no_1 = BankAccount("Toninho Takeo", 2345, "05-05-24", 1000 )
 # ac_no_2 = BankAccount("Jim Jones", 5424, "01-05-22", 1000 )
 # ac_no_3 = BankAccount("Sally Field", 3242, "11-04-15", 1000 )
 # ac_no_4 = BankAccount("Burt Reynolds", 4325, "08-11-13", 1000 )
@@ -108,7 +108,7 @@ class BankAccount:
 # ac_no_1.check_balance()
 
 # How many days ago did this account get setup?
-# print(ac_no_1.days_since_opened())
+print(ac_no_1.days_since_opened())
 
 # Lets print acct details to a file
 # ac_no_1.print_customer_details()

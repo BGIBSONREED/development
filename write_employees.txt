@@ -1,0 +1,5 @@
+Employee name: Brenetta
+Job title: Manager
+Department: Human Resource
+Salary: $80000.00
+Year hired: 2004

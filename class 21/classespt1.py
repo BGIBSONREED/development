@@ -80,7 +80,7 @@ point6 = Point2d(13,15)
 # Mutator method
 point7 = Point2d(5,11)
 point7.set_x(10)
-# print(point7)
+print(point7)
 
 point7.set_y(25)
 # print(point7)
@@ -105,22 +105,22 @@ class Dog:
         return f'{self.name} is a {self.breed} and was born in {self.birth_year}'
     
     # #human age
-    def human_age(self):
-        today = datetime.datetime.now()
-        year = today.year
-        return year - self.birth_year
+    # def human_age(self):
+    #     today = datetime.datetime.now()
+    #     year = today.year
+    #     return year - self.birth_year
        
     #write a method that will calculate dog years
-    # def dog_years(self):
-    #     # today = datetime.datetime.now()
-    #     # year = today.year
-    #     # return f'{self.name} is {year - self.birth_year} years old in dog years'
     def dog_years(self):
-        return 7 * self.human_age()
+        today = datetime.datetime.now()
+        year = today.year
+        return f'{self.name} is {year - self.birth_year} years old in dog years'
+    # def dog_years(self):
+    #     return 7 * self.human_age()
     
-dog1 = Dog('Fido', 'Poodle', 2021) #Created our first object of the dog class
-dog2 = Dog('Lady', 'Terrier', 2019)
-dog3 = Dog('Stella','Bulldog', 2018)
+# dog1 = Dog('Fido', 'Poodle', 2021) #Created our first object of the dog class
+# dog2 = Dog('Lady', 'Terrier', 2019)
+# dog3 = Dog('Stella','Bulldog', 2018)
 
 #string representation print out
 # print(dog1) 
@@ -191,7 +191,7 @@ class Date:
         self.month = month
         self.day = day
 
-#    this will control what the print bulit in function displays
+#    this will control what the print built in function displays
     def __str__(self):
         return f'Month: {self.month:02d}\nDay: {self.day:02d}\nYear: {self.year:02d}'
     

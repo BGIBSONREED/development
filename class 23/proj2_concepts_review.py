@@ -95,10 +95,10 @@ class BankAccount:
         days_since_opened = today - open_date
         return f'Account opened {days_since_opened.days} days ago'
 
-    def print_customer_details(self):
-        f = open('customer_details.txt', 'w')
-        f.write(f'''Customer name: {self.customer_name}\nAccount number: {self.acct_num}\nDate of opening: {self.date}\nBalance: ${self.balance:.02f}\nAccount opened: {self.days_since_opened()}''')
-        f.close()
+    # def print_customer_details(self):
+    #     f = open('customer_details.txt', 'w')
+    #     f.write(f'''Customer name: {self.customer_name}\nAccount number: {self.acct_num}\nDate of opening: {self.date}\nBalance: ${self.balance:.02f}\nAccount opened: {self.days_since_opened()}''')
+    #     f.close()
 
 
 ac_no_1 = BankAccount("Toninho Takeo", 2345, "03-05-24", 1000 )
@@ -115,10 +115,10 @@ ac_no_1 = BankAccount("Toninho Takeo", 2345, "03-05-24", 1000 )
 # ac_no_1.deposit(500)
 # ac_no_1.withdraw(500)
 # ac_no_1.check_balance()
-# ac_no_1.days_since_opened
+ac_no_1.days_since_opened
 # print(ac_no_1)
 # print(ac_no_1.days_since_opened())
-ac_no_1.print_customer_details()
+# ac_no_1.print_customer_details()
 
 
 
